@@ -1,3 +1,4 @@
+#include <_types/_uint64_t.h>
 #include <cstring>
 #include <iostream>
 #include <stdio.h>
@@ -6,26 +7,16 @@
 #include <time.h>
 #include <vector>
 
+// Cryptography
 #include "ed25519/ed25519.h"
 
 // NETWORKING
 #include "json.hpp"
 #include <cpr/cpr.h>
 
-// contract_id = "contract.testnet"
-// signer_id = "signer.testnet"
-// signer_key = "ed25519:[SIGNER_SECRET_KEY]"
-// args = {"counter": 1, "action": "increase"}
-//
-// near_provider =
-// near_api.providers.JsonProvider("https://rpc.testnet.near.org") key_pair =
-// near_api.signer.KeyPair(signer_key) signer =
-// near_api.signer.Signer(signer_id, key_pair) account =
-// near_api.account.Account(near_provider, signer)
-//
-// out = account.function_call(contract_id, "counter_set", args)
-//
-// print(out)
+// Brosh Encoder
+#include "borsh.hpp"
+#include "sha256.hpp"
 
 using namespace std;
 using json = nlohmann::json;
@@ -55,9 +46,15 @@ struct Transaction {
   vector<Action> actions;
 };
 
-const string NEAR_PROVIDER = "https://rpc.testnet.near.org";
+struct SignerInfo {
+  long nonce;
+  string block_hash;
+};
 
-int get_nonce() {
+const string NEAR_PROVIDER = "https://rpc.testnet.near.org";
+const long DEFAULT_GAS = 100000000000000;
+
+SignerInfo signer_info() {
   json body = {{"jsonrpc", "2.0"},
                {"id", "dontcare"},
                {"method", "query"},
@@ -66,17 +63,16 @@ int get_nonce() {
                  {"finality", "final"},
                  {"account_id", "unify.testnet"},
                  {"public_key",
-                  "ed25519:4UV2ajhwfWhoounU5tozc6JYuFQVgTxBBUxHkMvscAbR"}}}};
+                  "ed25519:4uv2ajhwfwhoounu5tozc6jyufqvgtxbbuxhkmvscabr"}}}};
   cpr::Response r = cpr::Post(cpr::Url{NEAR_PROVIDER}, cpr::Body{body.dump()},
-                              cpr::Header{{"Content-Type", "application/json"}},
+                              cpr::Header{{"content-type", "application/json"}},
                               cpr::Header{{"accept", "application/json"}});
-  // r.status_code;            // 200
-  // r.header["content-type"]; // application/json; charset=utf-8
-  // r.text;                   // JSON text string
 
-  std::cout << r.status_code << std::endl;
-  std::cout << r.text << std::endl;
-  return 0;
+  json result = json::parse(r.text);
+  SignerInfo signer_info;
+  signer_info.nonce = result["result"]["nonce"];
+  signer_info.block_hash = result["result"]["block_hash"];
+  return signer_info;
 }
 
 int main() {
@@ -86,25 +82,11 @@ int main() {
   auto public_key = "4UV2ajhwfWhoounU5tozc6JYuFQVgTxBBUxHkMvscAbR";
   // Create a signer with privatekey
 
-  // Get nonce
-  get_nonce();
-  // Call an http request
-
-  //    http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=query \
-//      params:='{
-  //        "request_type": "view_access_key",
-  //        "finality": "final",
-  //        "account_id": "client.chainlink.testnet",
-  //        "public_key":
-  //        "ed25519:H9k5eiU4xXS3M4z8HzKJSLaZdqGdGwBG49o7orNC4eZW"
-  //      }'
-
-  auto nonce = 101235786000002;
+  SignerInfo _signer_info = signer_info();
 
   // Function call
   auto contract_id = "wrap.testnet";
   auto method_name = "ft_transfer";
-  auto gas = 100000000000000;
   auto args =
       "{\"receiver_id\": \"huy_pham.testnet\", \"amount\": \"19\"}"; // String
                                                                      // in
@@ -116,28 +98,34 @@ int main() {
       "{\"receiver_id\": \"huy_pham.testnet\", \"amount\": \"19\"}"; // String
                                                                      // in
                                                                      // json-format
-  action.gas = 100000000000000;
+  action.gas = DEFAULT_GAS;
   action.deposit = 0;
-
-  // Get lastest block_hash
-  auto block_hash = "12345";
 
   // Sign and submit tx
   Transaction tx;
   tx.signer_id = "unify.testnet";
   tx.public_key = public_key;
-  tx.nonce = nonce + 1;
+  tx.nonce = _signer_info.nonce + 1;
   tx.receiver_id = contract_id;
-  tx.block_hash = block_hash;
+  tx.block_hash = _signer_info.block_hash; // TODO: Convert to vecu8
   tx.actions.push_back(action);
 
-  // let transaction = Transaction {
-  //     signer_id: self.config.account_id.clone(),
-  //     public_key: near_signer.public_key.clone(),
-  //     nonce: signer.nonce as u64 + 1,
-  //     receiver_id: self.config.ref_contract.parse().unwrap(),
-  //     block_hash:
-  //     CryptoHash::try_from_slice(&signer.block_hash.unwrap()).unwrap(),
-  //     actions,
-  // };
+  BorshEncoder encoder;
+
+  encoder.Encode(tx.signer_id, tx.public_key, (uint64_t)tx.nonce,
+                 tx.receiver_id, std::pair{tx.block_hash, 32}, tx.actions);
+  auto tx_encoded = encoder.GetBuffer();
+  SHA256 sha256;
+  sha256.update(tx_encoded);
+  auto hash = sha256.digest();
+
+  unsigned char *signature;
+
+  ed25519_sign(signature, tx_encoded, tx_encoded.size(), public_key,
+               private_key);
+
+  // TODO: Create SignedTx Struct
+  // TODO: Broadcast Tx
+
+  delete[] hash;
 }
