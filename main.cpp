@@ -1,4 +1,5 @@
 #include <_types/_uint64_t.h>
+#include <cctype>
 #include <cstring>
 #include <iostream>
 #include <stdio.h>
@@ -8,11 +9,14 @@
 #include <vector>
 
 // Cryptography
+#include "bip-implement-cpp/src/keynode/keynode.h"
+#include "bip39/src/include/bip39/bip39.h"
+#include "bip39/src/include/bip39/word_list.h"
 #include "ed25519/ed25519.h"
 
 // NETWORKING
 #include "json.hpp"
-#include <cpr/cpr.h>
+// #include <cpr/cpr.h>
 
 // Brosh Encoder
 #include "borsh.hpp"
@@ -54,28 +58,49 @@ struct SignerInfo {
 const string NEAR_PROVIDER = "https://rpc.testnet.near.org";
 const long DEFAULT_GAS = 100000000000000;
 
-SignerInfo signer_info() {
-  json body = {{"jsonrpc", "2.0"},
-               {"id", "dontcare"},
-               {"method", "query"},
-               {"params",
-                {{"request_type", "view_access_key"},
-                 {"finality", "final"},
-                 {"account_id", "unify.testnet"},
-                 {"public_key",
-                  "ed25519:4uv2ajhwfwhoounu5tozc6jyufqvgtxbbuxhkmvscabr"}}}};
-  cpr::Response r = cpr::Post(cpr::Url{NEAR_PROVIDER}, cpr::Body{body.dump()},
-                              cpr::Header{{"content-type", "application/json"}},
-                              cpr::Header{{"accept", "application/json"}});
+// SignerInfo signer_info() {
+//   json body = {{"jsonrpc", "2.0"},
+//                {"id", "dontcare"},
+//                {"method", "query"},
+//                {"params",
+//                 {{"request_type", "view_access_key"},
+//                  {"finality", "final"},
+//                  {"account_id", "unify.testnet"},
+//                  {"public_key",
+//                   "ed25519:4uv2ajhwfwhoounu5tozc6jyufqvgtxbbuxhkmvscabr"}}}};
+//   cpr::Response r = cpr::Post(cpr::Url{NEAR_PROVIDER},
+//   cpr::Body{body.dump()},
+//                               cpr::Header{{"content-type",
+//                               "application/json"}}, cpr::Header{{"accept",
+//                               "application/json"}});
+//
+//   json result = json::parse(r.text);
+//   SignerInfo signer_info;
+//   signer_info.nonce = result["result"]["nonce"];
+//   signer_info.block_hash = result["result"]["block_hash"];
+//   return signer_info;
+// }
 
-  json result = json::parse(r.text);
-  SignerInfo signer_info;
-  signer_info.nonce = result["result"]["nonce"];
-  signer_info.block_hash = result["result"]["block_hash"];
-  return signer_info;
+void parse_seed_phrase(string seed_phrase) {
+  // Convert seed_phrase to lowercase
+
+  vector<std::string> phrase{"shoot",  "island",  "position", "soft",
+                             "burden", "budget",  "tooth",    "cruel",
+                             "issue",  "economy", "destroy",  "above"};
+  BIP39::word_list words;
+  for (auto p : phrase) {
+    words.add(p);
+  }
+  auto seed = BIP39::decode_mnemonic(words);
 }
 
 int main() {
+  string pharase = "shoot island position soft burden budget tooth cruel issue "
+                   "economy destroy above";
+  parse_seed_phrase(pharase);
+}
+/*
+void submit_tx() {
   auto account_id = "unify.testnet";
   auto private_key = "426VFPwA79edh3EUnSzzvXVj3VTdrjYaVba89xt7Ywu5Ru1jBopeDvww6"
                      "TtJwYbbMDSipzcUDa1WyEEnCSfADJJT";
@@ -90,16 +115,16 @@ int main() {
   auto args =
       "{\"receiver_id\": \"huy_pham.testnet\", \"amount\": \"19\"}"; // String
                                                                      // in
-                                                                     // json-format
+                                                                     //
+json-format
 
   Action action;
   action.methodName = "ft_transfer";
   action.args =
       "{\"receiver_id\": \"huy_pham.testnet\", \"amount\": \"19\"}"; // String
                                                                      // in
-                                                                     // json-format
-  action.gas = DEFAULT_GAS;
-  action.deposit = 0;
+                                                                     //
+json-format action.gas = DEFAULT_GAS; action.deposit = 0;
 
   // Sign and submit tx
   Transaction tx;
@@ -129,3 +154,4 @@ int main() {
 
   delete[] hash;
 }
+*/
