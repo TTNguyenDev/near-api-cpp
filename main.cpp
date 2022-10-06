@@ -1,4 +1,3 @@
-#include <_types/_uint64_t.h>
 #include <cctype>
 #include <cstring>
 #include <iostream>
@@ -9,7 +8,7 @@
 #include <vector>
 
 // Cryptography
-#include "bip-implement-cpp/src/keynode/keynode.h"
+// #include "bip-implement-cpp/src/keynode/keynode.h"
 #include "bip39/src/include/bip39/bip39.h"
 #include "bip39/src/include/bip39/word_list.h"
 #include "ed25519/ed25519.h"
