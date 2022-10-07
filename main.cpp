@@ -90,7 +90,17 @@ void parse_seed_phrase(string seed_phrase) {
   for (auto p : phrase) {
     words.add(p);
   }
+  
   auto seed = BIP39::decode_mnemonic(words);
+
+  cout << "Seed size is " << seed.size() << endl << "Seed is ";
+
+  for (auto c : seed)
+  {
+    cout << c;
+  }
+
+  cout << endl;
 }
 
 int main() {
