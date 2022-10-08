@@ -47,4 +47,4 @@ include_directories(SYSTEM bip3x/include)
 # exe
 add_executable(near-api-cpp-test main.cpp)
 # target_link_libraries(bip44 OpenSSL::SSL)
-target_link_libraries(near-api-cpp-test bip3x) 
+target_link_libraries(near-api-cpp-test bip39) 
