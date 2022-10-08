@@ -5,9 +5,9 @@ project(near-api-cpp)
 set(CMAKE_CXX_STANDARD 17)
 
 # openssl
-set(OPENSSL_USE_STATIC_LIBS TRUE)
-find_package(OpenSSL REQUIRED)
-include_directories(${OPENSSL_INCLUDE_DIR})
+# set(OPENSSL_USE_STATIC_LIBS TRUE)
+# find_package(OpenSSL REQUIRED)
+# include_directories(${OPENSSL_INCLUDE_DIR})
 
 # bip3x
 add_subdirectory(bip3x)
@@ -28,23 +28,23 @@ include_directories(SYSTEM bip3x/include)
 #     bip-implement-cpp/src/keynode/logger.cpp)
 
 # cpr
-add_subdirectory(cpr)
-include_directories(SYSTEM cpr/include)
-
-# ed25519
-add_library(ed25519 STATIC
-    ed25519/add_scalar.c
-    ed25519/fe.c
-    ed25519/ge.c
-    ed25519/key_exchange.c
-    ed25519/keypair.c
-    ed25519/sc.c
-    ed25519/seed.c
-    ed25519/sha512.c
-    ed25519/sign.c
-    ed25519/verify.c)
+# add_subdirectory(cpr)
+# include_directories(SYSTEM cpr/include)
+#
+# # ed25519
+# add_library(ed25519 STATIC
+#     ed25519/add_scalar.c
+#     ed25519/fe.c
+#     ed25519/ge.c
+#     ed25519/key_exchange.c
+#     ed25519/keypair.c
+#     ed25519/sc.c
+#     ed25519/seed.c
+#     ed25519/sha512.c
+#     ed25519/sign.c
+#     ed25519/verify.c)
 
 # exe
 add_executable(near-api-cpp-test main.cpp)
 # target_link_libraries(bip44 OpenSSL::SSL)
-target_link_libraries(near-api-cpp-test bip39 bip44 bip3x cpr ed25519)
+target_link_libraries(near-api-cpp-test bip3x) 

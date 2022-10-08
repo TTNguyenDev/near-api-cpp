@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib/bip3x-2.2
+includedir=${prefix}/include
+
+Name: bip3x
+Description: Native BIP39 Mnemonic implementation (with JNI and pure C bindings)
+Version: 
+Libs: -L${libdir} -lbip39_jni
+Cflags: -I${includedir}
