@@ -1,0 +1,15 @@
+/cmake-build-*
+/build
+_build
+_build*
+/build_*
+output
+.idea
+.DS_STORE
+venv
+tools/openssl*
+tools/arm*
+tools/OpenSSL_*
+src/bindings/cbip39_config.h
+include/bip3x/bip39_core.h
+src/bindings/cbip39_config.h

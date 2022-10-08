@@ -1,0 +1,14 @@
+# Target labels
+ curl-populate
+# Source files and their labels
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/CMakeFiles/curl-populate
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/CMakeFiles/curl-populate.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule

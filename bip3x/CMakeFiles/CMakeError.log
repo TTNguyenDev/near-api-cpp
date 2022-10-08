@@ -1,0 +1,1096 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test LEAK_SANITIZER_AVAILABLE failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bfe7b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bfe7b.dir/build.make CMakeFiles/cmTC_bfe7b.dir/build
+Building CXX object CMakeFiles/cmTC_bfe7b.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DLEAK_SANITIZER_AVAILABLE  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -fsanitize=leak -std=gnu++17 -MD -MT CMakeFiles/cmTC_bfe7b.dir/src.cxx.o -MF CMakeFiles/cmTC_bfe7b.dir/src.cxx.o.d -o CMakeFiles/cmTC_bfe7b.dir/src.cxx.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported option '-fsanitize=leak' for target 'x86_64-apple-darwin21.6.0'
+make[1]: *** [CMakeFiles/cmTC_bfe7b.dir/src.cxx.o] Error 1
+make: *** [cmTC_bfe7b/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining size of off64_t failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b8349/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b8349.dir/build.make CMakeFiles/cmTC_b8349.dir/build
+Building C object CMakeFiles/cmTC_b8349.dir/OFF64_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_b8349.dir/OFF64_T.c.o -MF CMakeFiles/cmTC_b8349.dir/OFF64_T.c.o.d -o CMakeFiles/cmTC_b8349.dir/OFF64_T.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_b8349.dir/OFF64_T.c.o] Error 1
+make: *** [cmTC_b8349/fast] Error 2
+
+
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of _off64_t failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_75ac0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_75ac0.dir/build.make CMakeFiles/cmTC_75ac0.dir/build
+Building C object CMakeFiles/cmTC_75ac0.dir/_OFF64_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_75ac0.dir/_OFF64_T.c.o -MF CMakeFiles/cmTC_75ac0.dir/_OFF64_T.c.o.d -o CMakeFiles/cmTC_75ac0.dir/_OFF64_T.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:29:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:30:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:31:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:32:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:33:12: error: use of undeclared identifier '_off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_75ac0.dir/_OFF64_T.c.o] Error 1
+make: *** [cmTC_75ac0/fast] Error 2
+
+
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/_OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(_off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __off64_t failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2b633/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2b633.dir/build.make CMakeFiles/cmTC_2b633.dir/build
+Building C object CMakeFiles/cmTC_2b633.dir/__OFF64_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_2b633.dir/__OFF64_T.c.o -MF CMakeFiles/cmTC_2b633.dir/__OFF64_T.c.o.d -o CMakeFiles/cmTC_2b633.dir/__OFF64_T.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:29:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:30:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:31:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:32:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:33:12: error: use of undeclared identifier '__off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_2b633.dir/__OFF64_T.c.o] Error 1
+make: *** [cmTC_2b633/fast] Error 2
+
+
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/__OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function connect exists in the socket;-framework SystemConfiguration failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_737de/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_737de.dir/build.make CMakeFiles/cmTC_737de.dir/build
+Building C object CMakeFiles/cmTC_737de.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_737de.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_737de.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_737de.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_737de
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_737de.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_737de.dir/CheckFunctionExists.c.o -o cmTC_737de  -lsocket -framework SystemConfiguration 
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_737de] Error 1
+make: *** [cmTC_737de/fast] Error 2
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/utime.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8614a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8614a.dir/build.make CMakeFiles/cmTC_8614a.dir/build
+Building C object CMakeFiles/cmTC_8614a.dir/HAVE_SYS_UTIME_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_8614a.dir/HAVE_SYS_UTIME_H.c.o -MF CMakeFiles/cmTC_8614a.dir/HAVE_SYS_UTIME_H.c.o.d -o CMakeFiles/cmTC_8614a.dir/HAVE_SYS_UTIME_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c:17:10: fatal error: 'sys/utime.h' file not found
+#include <sys/utime.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8614a.dir/HAVE_SYS_UTIME_H.c.o] Error 1
+make: *** [cmTC_8614a/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_28faa/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_28faa.dir/build.make CMakeFiles/cmTC_28faa.dir/build
+Building C object CMakeFiles/cmTC_28faa.dir/HAVE_IDN2_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_28faa.dir/HAVE_IDN2_H.c.o -MF CMakeFiles/cmTC_28faa.dir/HAVE_IDN2_H.c.o.d -o CMakeFiles/cmTC_28faa.dir/HAVE_IDN2_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c:24:10: fatal error: 'idn2.h' file not found
+#include <idn2.h>
+         ^~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_28faa.dir/HAVE_IDN2_H.c.o] Error 1
+make: *** [cmTC_28faa/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;io.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f2833/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f2833.dir/build.make CMakeFiles/cmTC_f2833.dir/build
+Building C object CMakeFiles/cmTC_f2833.dir/HAVE_IO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_f2833.dir/HAVE_IO_H.c.o -MF CMakeFiles/cmTC_f2833.dir/HAVE_IO_H.c.o.d -o CMakeFiles/cmTC_f2833.dir/HAVE_IO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c:25:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_f2833.dir/HAVE_IO_H.c.o] Error 1
+make: *** [cmTC_f2833/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;krb.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5cce9/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5cce9.dir/build.make CMakeFiles/cmTC_5cce9.dir/build
+Building C object CMakeFiles/cmTC_5cce9.dir/HAVE_KRB_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_5cce9.dir/HAVE_KRB_H.c.o -MF CMakeFiles/cmTC_5cce9.dir/HAVE_KRB_H.c.o.d -o CMakeFiles/cmTC_5cce9.dir/HAVE_KRB_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c:25:10: fatal error: 'krb.h' file not found
+#include <krb.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_5cce9.dir/HAVE_KRB_H.c.o] Error 1
+make: *** [cmTC_5cce9/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <krb.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file linux/tcp.h exists failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8026e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8026e.dir/build.make CMakeFiles/cmTC_8026e.dir/build
+Building C object CMakeFiles/cmTC_8026e.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_8026e.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_8026e.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_8026e.dir/CheckIncludeFile.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/tcp.h' file not found
+#include <linux/tcp.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8026e.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_8026e/fast] Error 2
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;pem.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2e741/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2e741.dir/build.make CMakeFiles/cmTC_2e741.dir/build
+Building C object CMakeFiles/cmTC_2e741.dir/HAVE_PEM_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_2e741.dir/HAVE_PEM_H.c.o -MF CMakeFiles/cmTC_2e741.dir/HAVE_PEM_H.c.o.d -o CMakeFiles/cmTC_2e741.dir/HAVE_PEM_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c:31:10: fatal error: 'pem.h' file not found
+#include <pem.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2e741.dir/HAVE_PEM_H.c.o] Error 1
+make: *** [cmTC_2e741/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <pem.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a752d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a752d.dir/build.make CMakeFiles/cmTC_a752d.dir/build
+Building C object CMakeFiles/cmTC_a752d.dir/HAVE_SSL_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_a752d.dir/HAVE_SSL_H.c.o -MF CMakeFiles/cmTC_a752d.dir/HAVE_SSL_H.c.o.d -o CMakeFiles/cmTC_a752d.dir/HAVE_SSL_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:35:10: fatal error: 'ssl.h' file not found
+#include <ssl.h>
+         ^~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a752d.dir/HAVE_SSL_H.c.o] Error 1
+make: *** [cmTC_a752d/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;stropts.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_33661/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_33661.dir/build.make CMakeFiles/cmTC_33661.dir/build
+Building C object CMakeFiles/cmTC_33661.dir/HAVE_STROPTS_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_33661.dir/HAVE_STROPTS_H.c.o -MF CMakeFiles/cmTC_33661.dir/HAVE_STROPTS_H.c.o.d -o CMakeFiles/cmTC_33661.dir/HAVE_STROPTS_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:41:10: fatal error: 'stropts.h' file not found
+#include <stropts.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_33661.dir/HAVE_STROPTS_H.c.o] Error 1
+make: *** [cmTC_33661/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termio.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_793b0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_793b0.dir/build.make CMakeFiles/cmTC_793b0.dir/build
+Building C object CMakeFiles/cmTC_793b0.dir/HAVE_TERMIO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_793b0.dir/HAVE_TERMIO_H.c.o -MF CMakeFiles/cmTC_793b0.dir/HAVE_TERMIO_H.c.o.d -o CMakeFiles/cmTC_793b0.dir/HAVE_TERMIO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_TERMIO_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_TERMIO_H.c:41:10: fatal error: 'termio.h' file not found
+#include <termio.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_793b0.dir/HAVE_TERMIO_H.c.o] Error 1
+make: *** [cmTC_793b0/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;x509.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c7d4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4c7d4.dir/build.make CMakeFiles/cmTC_4c7d4.dir/build
+Building C object CMakeFiles/cmTC_4c7d4.dir/HAVE_X509_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_4c7d4.dir/HAVE_X509_H.c.o -MF CMakeFiles/cmTC_4c7d4.dir/HAVE_X509_H.c.o.d -o CMakeFiles/cmTC_4c7d4.dir/HAVE_X509_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_X509_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_X509_H.c:45:10: fatal error: 'x509.h' file not found
+#include <x509.h>
+         ^~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4c7d4.dir/HAVE_X509_H.c.o] Error 1
+make: *** [cmTC_4c7d4/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <x509.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;process.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bc7da/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bc7da.dir/build.make CMakeFiles/cmTC_bc7da.dir/build
+Building C object CMakeFiles/cmTC_bc7da.dir/HAVE_PROCESS_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_bc7da.dir/HAVE_PROCESS_H.c.o -MF CMakeFiles/cmTC_bc7da.dir/HAVE_PROCESS_H.c.o.d -o CMakeFiles/cmTC_bc7da.dir/HAVE_PROCESS_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c:45:10: fatal error: 'process.h' file not found
+#include <process.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_bc7da.dir/HAVE_PROCESS_H.c.o] Error 1
+make: *** [cmTC_bc7da/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <process.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;malloc.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fa733/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fa733.dir/build.make CMakeFiles/cmTC_fa733.dir/build
+Building C object CMakeFiles/cmTC_fa733.dir/HAVE_MALLOC_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_fa733.dir/HAVE_MALLOC_H.c.o -MF CMakeFiles/cmTC_fa733.dir/HAVE_MALLOC_H.c.o.d -o CMakeFiles/cmTC_fa733.dir/HAVE_MALLOC_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_MALLOC_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_MALLOC_H.c:47:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_fa733.dir/HAVE_MALLOC_H.c.o] Error 1
+make: *** [cmTC_fa733/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;memory.h;netinet/if_ether.h;stdint.h;sockio.h exist failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_72078/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_72078.dir/build.make CMakeFiles/cmTC_72078.dir/build
+Building C object CMakeFiles/cmTC_72078.dir/HAVE_SOCKIO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_72078.dir/HAVE_SOCKIO_H.c.o -MF CMakeFiles/cmTC_72078.dir/HAVE_SOCKIO_H.c.o.d -o CMakeFiles/cmTC_72078.dir/HAVE_SOCKIO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SOCKIO_H.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SOCKIO_H.c:50:10: fatal error: 'sockio.h' file not found
+#include <sockio.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_72078.dir/HAVE_SOCKIO_H.c.o] Error 1
+make: *** [cmTC_72078/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sockio.h>
+
+
+int main(void){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e7c54/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e7c54.dir/build.make CMakeFiles/cmTC_e7c54.dir/build
+Building C object CMakeFiles/cmTC_e7c54.dir/SIZEOF___INT64.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_e7c54.dir/SIZEOF___INT64.c.o -MF CMakeFiles/cmTC_e7c54.dir/SIZEOF___INT64.c.o.d -o CMakeFiles/cmTC_e7c54.dir/SIZEOF___INT64.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:29:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:30:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:31:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:32:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:33:12: error: use of undeclared identifier '__int64'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_e7c54.dir/SIZEOF___INT64.c.o] Error 1
+make: *** [cmTC_e7c54/fast] Error 2
+
+
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+

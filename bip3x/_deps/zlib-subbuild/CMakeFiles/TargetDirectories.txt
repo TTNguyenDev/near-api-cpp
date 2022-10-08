@@ -1,0 +1,3 @@
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/zlib-subbuild/CMakeFiles/zlib-populate.dir
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/zlib-subbuild/CMakeFiles/edit_cache.dir
+/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/_deps/zlib-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1449 @@
+The system is: Darwin - 21.6.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is AppleClang, found in "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/3.24.0/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is AppleClang, found in "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/3.24.0/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bc56e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bc56e.dir/build.make CMakeFiles/cmTC_bc56e.dir/build
+Building C object CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 14.0.0 (clang-1400.0.29.102)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -funwind-tables=2 -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 819.6 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-cast-function-type -Wno-bitwise-instead-of-logical -fdebug-compilation-dir=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 14.0.0 (clang-1400.0.29.102) default target x86_64-apple-darwin21.6.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_bc56e
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc56e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -o cmTC_bc56e 
+Apple clang version 14.0.0 (clang-1400.0.29.102)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o cmTC_bc56e -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-819.6
+BUILD 21:47:27 Sep 13 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_bc56e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bc56e.dir/build.make CMakeFiles/cmTC_bc56e.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Apple clang version 14.0.0 (clang-1400.0.29.102)]
+  ignore line: [Target: x86_64-apple-darwin21.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -funwind-tables=2 -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 819.6 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-cast-function-type -Wno-bitwise-instead-of-logical -fdebug-compilation-dir=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 14.0.0 (clang-1400.0.29.102) default target x86_64-apple-darwin21.6.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_bc56e]
+  ignore line: [/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc56e.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -o cmTC_bc56e ]
+  ignore line: [Apple clang version 14.0.0 (clang-1400.0.29.102)]
+  ignore line: [Target: x86_64-apple-darwin21.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o cmTC_bc56e -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [12.0.0] ==> ignore
+    arg [12.3] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_bc56e] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_bc56e.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d64ba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d64ba.dir/build.make CMakeFiles/cmTC_d64ba.dir/build
+Building CXX object CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Apple clang version 14.0.0 (clang-1400.0.29.102)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -funwind-tables=2 -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 819.6 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-cast-function-type -Wno-bitwise-instead-of-logical -fdeprecated-macro -fdebug-compilation-dir=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 (clang-1400.0.29.102) default target x86_64-apple-darwin21.6.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking CXX executable cmTC_d64ba
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d64ba.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d64ba 
+Apple clang version 14.0.0 (clang-1400.0.29.102)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o cmTC_d64ba -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-819.6
+BUILD 21:47:27 Sep 13 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_d64ba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d64ba.dir/build.make CMakeFiles/cmTC_d64ba.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Apple clang version 14.0.0 (clang-1400.0.29.102)]
+  ignore line: [Target: x86_64-apple-darwin21.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -funwind-tables=2 -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 819.6 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-cast-function-type -Wno-bitwise-instead-of-logical -fdeprecated-macro -fdebug-compilation-dir=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 14.0.0 (clang-1400.0.29.102) default target x86_64-apple-darwin21.6.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_d64ba]
+  ignore line: [/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d64ba.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d64ba ]
+  ignore line: [Apple clang version 14.0.0 (clang-1400.0.29.102)]
+  ignore line: [Target: x86_64-apple-darwin21.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o cmTC_d64ba -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [12.0.0] ==> ignore
+    arg [12.3] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d64ba] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_d64ba.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit objs: []
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+
+
+Performing C++ SOURCE FILE Test THREAD_SANITIZER_AVAILABLE succeeded with the following compile output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_02ab7/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_02ab7.dir/build.make CMakeFiles/cmTC_02ab7.dir/build
+Building CXX object CMakeFiles/cmTC_02ab7.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DTHREAD_SANITIZER_AVAILABLE  -fsanitize=thread -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -MD -MT CMakeFiles/cmTC_02ab7.dir/src.cxx.o -MF CMakeFiles/cmTC_02ab7.dir/src.cxx.o.d -o CMakeFiles/cmTC_02ab7.dir/src.cxx.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_02ab7
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02ab7.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -fsanitize=thread -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_02ab7.dir/src.cxx.o -o cmTC_02ab7 
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ADDRESS_SANITIZER_AVAILABLE succeeded with the following compile output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee192/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ee192.dir/build.make CMakeFiles/cmTC_ee192.dir/build
+Building CXX object CMakeFiles/cmTC_ee192.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DADDRESS_SANITIZER_AVAILABLE  -fsanitize=address -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -MD -MT CMakeFiles/cmTC_ee192.dir/src.cxx.o -MF CMakeFiles/cmTC_ee192.dir/src.cxx.o.d -o CMakeFiles/cmTC_ee192.dir/src.cxx.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ee192
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee192.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -fsanitize=address -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ee192.dir/src.cxx.o -o cmTC_ee192 
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test UNDEFINED_BEHAVIOUR_SANITIZER_AVAILABLE succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_53533/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_53533.dir/build.make CMakeFiles/cmTC_53533.dir/build
+Building CXX object CMakeFiles/cmTC_53533.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DUNDEFINED_BEHAVIOUR_SANITIZER_AVAILABLE  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -fsanitize=undefined -std=gnu++17 -MD -MT CMakeFiles/cmTC_53533.dir/src.cxx.o -MF CMakeFiles/cmTC_53533.dir/src.cxx.o.d -o CMakeFiles/cmTC_53533.dir/src.cxx.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_53533
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53533.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_53533.dir/src.cxx.o -o cmTC_53533 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ALL_SANITIZERS_AVAILABLE succeeded with the following compile output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c60c4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c60c4.dir/build.make CMakeFiles/cmTC_c60c4.dir/build
+Building CXX object CMakeFiles/cmTC_c60c4.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DALL_SANITIZERS_AVAILABLE  -fsanitize=address -fsanitize=undefined -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -MD -MT CMakeFiles/cmTC_c60c4.dir/src.cxx.o -MF CMakeFiles/cmTC_c60c4.dir/src.cxx.o.d -o CMakeFiles/cmTC_c60c4.dir/src.cxx.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c60c4
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c60c4.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fsanitize=address -fsanitize=undefined -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c60c4.dir/src.cxx.o -o cmTC_c60c4 
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test FNO_LTO_AVAILABLE succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_df809/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_df809.dir/build.make CMakeFiles/cmTC_df809.dir/build
+Building C object CMakeFiles/cmTC_df809.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DFNO_LTO_AVAILABLE  -fno-lto -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_df809.dir/src.c.o -MF CMakeFiles/cmTC_df809.dir/src.c.o.d -o CMakeFiles/cmTC_df809.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_df809
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df809.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -fno-lto -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_df809.dir/src.c.o -o cmTC_df809 
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file sys/sdt.h exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b35b0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b35b0.dir/build.make CMakeFiles/cmTC_b35b0.dir/build
+Building C object CMakeFiles/cmTC_b35b0.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_b35b0.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_b35b0.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_b35b0.dir/CheckIncludeFile.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b35b0
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b35b0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b35b0.dir/CheckIncludeFile.c.o -o cmTC_b35b0 
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e1289/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e1289.dir/build.make CMakeFiles/cmTC_e1289.dir/build
+Building C object CMakeFiles/cmTC_e1289.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_e1289.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_e1289.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_e1289.dir/CheckIncludeFile.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e1289
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1289.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e1289.dir/CheckIncludeFile.c.o -o cmTC_e1289 
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6b71e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6b71e.dir/build.make CMakeFiles/cmTC_6b71e.dir/build
+Building C object CMakeFiles/cmTC_6b71e.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_6b71e.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_6b71e.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_6b71e.dir/CheckIncludeFile.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6b71e
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b71e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6b71e.dir/CheckIncludeFile.c.o -o cmTC_6b71e 
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3345/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d3345.dir/build.make CMakeFiles/cmTC_d3345.dir/build
+Building C object CMakeFiles/cmTC_d3345.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_d3345.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_d3345.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_d3345.dir/CheckIncludeFile.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d3345
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3345.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d3345.dir/CheckIncludeFile.c.o -o cmTC_d3345 
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ec242/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ec242.dir/build.make CMakeFiles/cmTC_ec242.dir/build
+Building C object CMakeFiles/cmTC_ec242.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_ec242.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_ec242.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_ec242.dir/CheckIncludeFile.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ec242
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec242.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ec242.dir/CheckIncludeFile.c.o -o cmTC_ec242 
+
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4d2e6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4d2e6.dir/build.make CMakeFiles/cmTC_4d2e6.dir/build
+Building C object CMakeFiles/cmTC_4d2e6.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=fseeko -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_4d2e6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4d2e6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4d2e6.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4d2e6
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d2e6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=fseeko -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4d2e6.dir/CheckFunctionExists.c.o -o cmTC_4d2e6 
+
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_97dfc/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_97dfc.dir/build.make CMakeFiles/cmTC_97dfc.dir/build
+Building C object CMakeFiles/cmTC_97dfc.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=strerror -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_97dfc.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_97dfc.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_97dfc.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+/opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strerror' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strerror
+                              ^
+/opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'strerror' is a builtin with type 'char *(int)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strerror
+                              ^
+1 warning generated.
+Linking C executable cmTC_97dfc
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97dfc.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=strerror -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_97dfc.dir/CheckFunctionExists.c.o -o cmTC_97dfc 
+
+
+
+Determining if the function posix_memalign exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c6378/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c6378.dir/build.make CMakeFiles/cmTC_c6378.dir/build
+Building C object CMakeFiles/cmTC_c6378.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=posix_memalign -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -D _POSIX_C_SOURCE=200112L -std=c99 -MD -MT CMakeFiles/cmTC_c6378.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c6378.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c6378.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c6378
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6378.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=posix_memalign -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c6378.dir/CheckFunctionExists.c.o -o cmTC_c6378 
+
+
+
+Performing C SOURCE FILE Test HAVE_NO_INTERPOSITION succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e8777/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e8777.dir/build.make CMakeFiles/cmTC_e8777.dir/build
+Building C object CMakeFiles/cmTC_e8777.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_NO_INTERPOSITION  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -fno-semantic-interposition -std=c99 -MD -MT CMakeFiles/cmTC_e8777.dir/src.c.o -MF CMakeFiles/cmTC_e8777.dir/src.c.o.d -o CMakeFiles/cmTC_e8777.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+clang: warning: argument unused during compilation: '-fno-semantic-interposition' [-Wunused-command-line-argument]
+Linking C executable cmTC_e8777
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8777.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e8777.dir/src.c.o -o cmTC_e8777 
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3b1d2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3b1d2.dir/build.make CMakeFiles/cmTC_3b1d2.dir/build
+Building C object CMakeFiles/cmTC_3b1d2.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ATTRIBUTE_VISIBILITY_HIDDEN  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_3b1d2.dir/src.c.o -MF CMakeFiles/cmTC_3b1d2.dir/src.c.o.d -o CMakeFiles/cmTC_3b1d2.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3b1d2
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b1d2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3b1d2.dir/src.c.o -o cmTC_3b1d2 
+
+
+Source file was:
+#define Z_INTERNAL __attribute__((visibility ("hidden")))
+    int Z_INTERNAL foo;
+    int main() {
+        return 0;
+    }
+Performing C SOURCE FILE Test HAVE_ATTRIBUTE_VISIBILITY_INTERNAL succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f126f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f126f.dir/build.make CMakeFiles/cmTC_f126f.dir/build
+Building C object CMakeFiles/cmTC_f126f.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ATTRIBUTE_VISIBILITY_INTERNAL  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_f126f.dir/src.c.o -MF CMakeFiles/cmTC_f126f.dir/src.c.o.d -o CMakeFiles/cmTC_f126f.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f126f
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f126f.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f126f.dir/src.c.o -o cmTC_f126f 
+
+
+Source file was:
+#define Z_INTERNAL __attribute__((visibility ("internal")))
+    int Z_INTERNAL foo;
+    int main() {
+        return 0;
+    }
+Performing C SOURCE FILE Test HAVE_BUILTIN_CTZ succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_05304/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_05304.dir/build.make CMakeFiles/cmTC_05304.dir/build
+Building C object CMakeFiles/cmTC_05304.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_BUILTIN_CTZ  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_05304.dir/src.c.o -MF CMakeFiles/cmTC_05304.dir/src.c.o.d -o CMakeFiles/cmTC_05304.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_05304
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05304.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_05304.dir/src.c.o -o cmTC_05304 
+
+
+Source file was:
+int main(void) {
+        unsigned int zero = 0;
+        long test = __builtin_ctz(zero);
+        (void)test;
+        return 0;
+    }
+Performing C SOURCE FILE Test HAVE_BUILTIN_CTZLL succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4f39f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4f39f.dir/build.make CMakeFiles/cmTC_4f39f.dir/build
+Building C object CMakeFiles/cmTC_4f39f.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_BUILTIN_CTZLL  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_4f39f.dir/src.c.o -MF CMakeFiles/cmTC_4f39f.dir/src.c.o.d -o CMakeFiles/cmTC_4f39f.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4f39f
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f39f.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4f39f.dir/src.c.o -o cmTC_4f39f 
+
+
+Source file was:
+int main(void) {
+        unsigned int zero = 0;
+        long test = __builtin_ctzll(zero);
+        (void)test;
+        return 0;
+    }
+Performing C SOURCE FILE Test HAVE_PTRDIFF_T succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_105ee/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_105ee.dir/build.make CMakeFiles/cmTC_105ee.dir/build
+Building C object CMakeFiles/cmTC_105ee.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_PTRDIFF_T  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_105ee.dir/src.c.o -MF CMakeFiles/cmTC_105ee.dir/src.c.o.d -o CMakeFiles/cmTC_105ee.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_105ee
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_105ee.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_105ee.dir/src.c.o -o cmTC_105ee 
+
+
+Source file was:
+#include <stddef.h>
+     int main() {
+         ptrdiff_t *a;
+         (void)a;
+         return 0;
+    }
+Performing C SOURCE FILE Test HAVE_SSE2_INTRIN succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d743d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d743d.dir/build.make CMakeFiles/cmTC_d743d.dir/build
+Building C object CMakeFiles/cmTC_d743d.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SSE2_INTRIN  -Wall -Wno-implicit-fallthrough -msse2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_d743d.dir/src.c.o -MF CMakeFiles/cmTC_d743d.dir/src.c.o.d -o CMakeFiles/cmTC_d743d.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d743d
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d743d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -msse2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d743d.dir/src.c.o -o cmTC_d743d 
+
+
+Source file was:
+#include <immintrin.h>
+        int main(void) {
+            __m128i zero = _mm_setzero_si128();
+            (void)zero;
+            return 0;
+        }
+Performing C SOURCE FILE Test HAVE_SSSE3_INTRIN succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_952f1/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_952f1.dir/build.make CMakeFiles/cmTC_952f1.dir/build
+Building C object CMakeFiles/cmTC_952f1.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SSSE3_INTRIN  -Wall -Wno-implicit-fallthrough -mssse3 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_952f1.dir/src.c.o -MF CMakeFiles/cmTC_952f1.dir/src.c.o.d -o CMakeFiles/cmTC_952f1.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_952f1
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_952f1.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -mssse3 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_952f1.dir/src.c.o -o cmTC_952f1 
+
+
+Source file was:
+#include <immintrin.h>
+        int main(void) {
+            __m128i u, v, w;
+            u = _mm_set1_epi32(1);
+            v = _mm_set1_epi32(2);
+            w = _mm_hadd_epi32(u, v);
+            (void)w;
+            return 0;
+        }
+Performing C SOURCE FILE Test HAVE_SSE42CRC_INLINE_ASM succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ab978/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ab978.dir/build.make CMakeFiles/cmTC_ab978.dir/build
+Building C object CMakeFiles/cmTC_ab978.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SSE42CRC_INLINE_ASM  -Wall -Wno-implicit-fallthrough -msse4 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_ab978.dir/src.c.o -MF CMakeFiles/cmTC_ab978.dir/src.c.o.d -o CMakeFiles/cmTC_ab978.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ab978
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab978.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -msse4 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ab978.dir/src.c.o -o cmTC_ab978 
+
+
+Source file was:
+int main(void) {
+            unsigned val = 0, h = 0;
+        #if defined(_MSC_VER)
+            { __asm mov edx, h __asm mov eax, val __asm crc32 eax, edx __asm mov val, eax }
+        #else
+            __asm__ __volatile__ ( "crc32 %1,%0" : "+r" (h) : "r" (val) );
+        #endif
+            return (int)h;
+        }
+Performing C SOURCE FILE Test HAVE_SSE42CRC_INTRIN succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d045a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d045a.dir/build.make CMakeFiles/cmTC_d045a.dir/build
+Building C object CMakeFiles/cmTC_d045a.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SSE42CRC_INTRIN  -Wall -Wno-implicit-fallthrough -msse4 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_d045a.dir/src.c.o -MF CMakeFiles/cmTC_d045a.dir/src.c.o.d -o CMakeFiles/cmTC_d045a.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d045a
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d045a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -msse4 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d045a.dir/src.c.o -o cmTC_d045a 
+
+
+Source file was:
+#include <immintrin.h>
+        int main(void) {
+            unsigned crc = 0;
+            char c = 'c';
+        #if defined(_MSC_VER)
+            crc = _mm_crc32_u32(crc, c);
+        #else
+            crc = __builtin_ia32_crc32qi(crc, c);
+        #endif
+            (void)crc;
+            return 0;
+        }
+Performing C SOURCE FILE Test HAVE_SSE42CMPSTR_INTRIN succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_98a87/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_98a87.dir/build.make CMakeFiles/cmTC_98a87.dir/build
+Building C object CMakeFiles/cmTC_98a87.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SSE42CMPSTR_INTRIN  -Wall -Wno-implicit-fallthrough -msse4 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_98a87.dir/src.c.o -MF CMakeFiles/cmTC_98a87.dir/src.c.o.d -o CMakeFiles/cmTC_98a87.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_98a87
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98a87.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -msse4 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_98a87.dir/src.c.o -o cmTC_98a87 
+
+
+Source file was:
+#include <immintrin.h>
+        int main(void) {
+            unsigned char a[64] = { 0 };
+            unsigned char b[64] = { 0 };
+            __m128i xmm_src0, xmm_src1;
+            xmm_src0 = _mm_loadu_si128((__m128i *)(char *)a);
+            xmm_src1 = _mm_loadu_si128((__m128i *)(char *)b);
+            return _mm_cmpestri(xmm_src0, 16, xmm_src1, 16, 0);
+        }
+Performing C SOURCE FILE Test HAVE_PCLMULQDQ_INTRIN succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_75db2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_75db2.dir/build.make CMakeFiles/cmTC_75db2.dir/build
+Building C object CMakeFiles/cmTC_75db2.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_PCLMULQDQ_INTRIN  -Wall -Wno-implicit-fallthrough -mpclmul -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_75db2.dir/src.c.o -MF CMakeFiles/cmTC_75db2.dir/src.c.o.d -o CMakeFiles/cmTC_75db2.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_75db2
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75db2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -mpclmul -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_75db2.dir/src.c.o -o cmTC_75db2 
+
+
+Source file was:
+#include <immintrin.h>
+            int main(void) {
+                __m128i a = _mm_setzero_si128();
+                __m128i b = _mm_setzero_si128();
+                __m128i c = _mm_clmulepi64_si128(a, b, 0x10);
+                (void)c;
+                return 0;
+            }
+Performing C SOURCE FILE Test HAVE_AVX2_INTRIN succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_764a2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_764a2.dir/build.make CMakeFiles/cmTC_764a2.dir/build
+Building C object CMakeFiles/cmTC_764a2.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_AVX2_INTRIN  -Wall -Wno-implicit-fallthrough -mavx2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=c99 -MD -MT CMakeFiles/cmTC_764a2.dir/src.c.o -MF CMakeFiles/cmTC_764a2.dir/src.c.o.d -o CMakeFiles/cmTC_764a2.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_764a2
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_764a2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wall -Wno-implicit-fallthrough -mavx2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_764a2.dir/src.c.o -o cmTC_764a2 
+
+
+Source file was:
+#include <immintrin.h>
+        int main(void) {
+            __m256i x = _mm256_set1_epi16(2);
+            const __m256i y = _mm256_set1_epi16(1);
+            x = _mm256_subs_epu16(x, y);
+            (void)x;
+            return 0;
+        }
+Performing C SOURCE FILE Test HAVE_SOCKADDR_IN6_SIN6_ADDR succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_79fd2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_79fd2.dir/build.make CMakeFiles/cmTC_79fd2.dir/build
+Building C object CMakeFiles/cmTC_79fd2.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SOCKADDR_IN6_SIN6_ADDR  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_79fd2.dir/src.c.o -MF CMakeFiles/cmTC_79fd2.dir/src.c.o.d -o CMakeFiles/cmTC_79fd2.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_79fd2
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79fd2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_79fd2.dir/src.c.o -o cmTC_79fd2 
+
+
+Source file was:
+
+#include <netinet/in.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in6 *)0)->sin6_addr);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_76052/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_76052.dir/build.make CMakeFiles/cmTC_76052.dir/build
+Building C object CMakeFiles/cmTC_76052.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_76052.dir/src.c.o -MF CMakeFiles/cmTC_76052.dir/src.c.o.d -o CMakeFiles/cmTC_76052.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_76052
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76052.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_76052.dir/src.c.o -o cmTC_76052 
+
+
+Source file was:
+
+#include <netinet/in.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in6 *)0)->sin6_scope_id);
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ef67c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ef67c.dir/build.make CMakeFiles/cmTC_ef67c.dir/build
+Building C object CMakeFiles/cmTC_ef67c.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_ef67c.dir/src.c.o -MF CMakeFiles/cmTC_ef67c.dir/src.c.o.d -o CMakeFiles/cmTC_ef67c.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ef67c
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef67c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ef67c.dir/src.c.o -o cmTC_ef67c 
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function dlopen exists in the ;-framework SystemConfiguration passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b5e82/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b5e82.dir/build.make CMakeFiles/cmTC_b5e82.dir/build
+Building C object CMakeFiles/cmTC_b5e82.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dlopen -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_b5e82.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_b5e82.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_b5e82.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b5e82
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5e82.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dlopen -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b5e82.dir/CheckFunctionExists.c.o -o cmTC_b5e82  -framework SystemConfiguration 
+
+
+
+Determining if the function gethostbyname exists in the c passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dfe3c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dfe3c.dir/build.make CMakeFiles/cmTC_dfe3c.dir/build
+Building C object CMakeFiles/cmTC_dfe3c.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_dfe3c.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_dfe3c.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_dfe3c.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dfe3c
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfe3c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dfe3c.dir/CheckFunctionExists.c.o -o cmTC_dfe3c  -lc 
+
+
+
+Determining if the function gethostname exists passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_132cd/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_132cd.dir/build.make CMakeFiles/cmTC_132cd.dir/build
+Building C object CMakeFiles/cmTC_132cd.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostname -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_132cd.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_132cd.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_132cd.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_132cd
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_132cd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostname -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_132cd.dir/CheckFunctionExists.c.o -o cmTC_132cd 
+
+
+
+Determining if the function dlopen exists in the -framework SystemConfiguration;-framework Security;-framework CoreFoundation passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_000f9/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_000f9.dir/build.make CMakeFiles/cmTC_000f9.dir/build
+Building C object CMakeFiles/cmTC_000f9.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dlopen -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_000f9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_000f9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_000f9.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.24.0/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_000f9
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_000f9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dlopen -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_000f9.dir/CheckFunctionExists.c.o -o cmTC_000f9  -framework SystemConfiguration -framework Security -framework CoreFoundation 
+
+
+
+Performing C SOURCE FILE Test USE_UNIX_SOCKETS succeeded with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3518f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3518f.dir/build.make CMakeFiles/cmTC_3518f.dir/build
+Building C object CMakeFiles/cmTC_3518f.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DUSE_UNIX_SOCKETS  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_3518f.dir/src.c.o -MF CMakeFiles/cmTC_3518f.dir/src.c.o.d -o CMakeFiles/cmTC_3518f.dir/src.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3518f
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3518f.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3518f.dir/src.c.o -o cmTC_3518f 
+
+
+Source file was:
+
+#include <sys/un.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_un *)0)->sun_path);
+  return 0;
+}
+
+Determining if files ;stdio.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_da591/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_da591.dir/build.make CMakeFiles/cmTC_da591.dir/build
+Building C object CMakeFiles/cmTC_da591.dir/HAVE_STDIO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_da591.dir/HAVE_STDIO_H.c.o -MF CMakeFiles/cmTC_da591.dir/HAVE_STDIO_H.c.o.d -o CMakeFiles/cmTC_da591.dir/HAVE_STDIO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_STDIO_H.c
+Linking C executable cmTC_da591
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da591.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_da591.dir/HAVE_STDIO_H.c.o -o cmTC_da591 
+
+
+
+Determining if files stdio.h;inttypes.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_54990/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_54990.dir/build.make CMakeFiles/cmTC_54990.dir/build
+Building C object CMakeFiles/cmTC_54990.dir/HAVE_INTTYPES_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_54990.dir/HAVE_INTTYPES_H.c.o -MF CMakeFiles/cmTC_54990.dir/HAVE_INTTYPES_H.c.o.d -o CMakeFiles/cmTC_54990.dir/HAVE_INTTYPES_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_INTTYPES_H.c
+Linking C executable cmTC_54990
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54990.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_54990.dir/HAVE_INTTYPES_H.c.o -o cmTC_54990 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8d283/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8d283.dir/build.make CMakeFiles/cmTC_8d283.dir/build
+Building C object CMakeFiles/cmTC_8d283.dir/HAVE_SYS_FILIO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_8d283.dir/HAVE_SYS_FILIO_H.c.o -MF CMakeFiles/cmTC_8d283.dir/HAVE_SYS_FILIO_H.c.o.d -o CMakeFiles/cmTC_8d283.dir/HAVE_SYS_FILIO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c
+Linking C executable cmTC_8d283
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d283.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8d283.dir/HAVE_SYS_FILIO_H.c.o -o cmTC_8d283 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_32ba5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_32ba5.dir/build.make CMakeFiles/cmTC_32ba5.dir/build
+Building C object CMakeFiles/cmTC_32ba5.dir/HAVE_SYS_IOCTL_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_32ba5.dir/HAVE_SYS_IOCTL_H.c.o -MF CMakeFiles/cmTC_32ba5.dir/HAVE_SYS_IOCTL_H.c.o.d -o CMakeFiles/cmTC_32ba5.dir/HAVE_SYS_IOCTL_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c
+Linking C executable cmTC_32ba5
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32ba5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_32ba5.dir/HAVE_SYS_IOCTL_H.c.o -o cmTC_32ba5 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b9c1d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b9c1d.dir/build.make CMakeFiles/cmTC_b9c1d.dir/build
+Building C object CMakeFiles/cmTC_b9c1d.dir/HAVE_SYS_PARAM_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_b9c1d.dir/HAVE_SYS_PARAM_H.c.o -MF CMakeFiles/cmTC_b9c1d.dir/HAVE_SYS_PARAM_H.c.o.d -o CMakeFiles/cmTC_b9c1d.dir/HAVE_SYS_PARAM_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_PARAM_H.c
+Linking C executable cmTC_b9c1d
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9c1d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b9c1d.dir/HAVE_SYS_PARAM_H.c.o -o cmTC_b9c1d 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f702c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f702c.dir/build.make CMakeFiles/cmTC_f702c.dir/build
+Building C object CMakeFiles/cmTC_f702c.dir/HAVE_SYS_POLL_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_f702c.dir/HAVE_SYS_POLL_H.c.o -MF CMakeFiles/cmTC_f702c.dir/HAVE_SYS_POLL_H.c.o.d -o CMakeFiles/cmTC_f702c.dir/HAVE_SYS_POLL_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_POLL_H.c
+Linking C executable cmTC_f702c
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f702c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f702c.dir/HAVE_SYS_POLL_H.c.o -o cmTC_f702c 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e996b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e996b.dir/build.make CMakeFiles/cmTC_e996b.dir/build
+Building C object CMakeFiles/cmTC_e996b.dir/HAVE_SYS_RESOURCE_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_e996b.dir/HAVE_SYS_RESOURCE_H.c.o -MF CMakeFiles/cmTC_e996b.dir/HAVE_SYS_RESOURCE_H.c.o.d -o CMakeFiles/cmTC_e996b.dir/HAVE_SYS_RESOURCE_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RESOURCE_H.c
+Linking C executable cmTC_e996b
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e996b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e996b.dir/HAVE_SYS_RESOURCE_H.c.o -o cmTC_e996b 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_066c5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_066c5.dir/build.make CMakeFiles/cmTC_066c5.dir/build
+Building C object CMakeFiles/cmTC_066c5.dir/HAVE_SYS_SELECT_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_066c5.dir/HAVE_SYS_SELECT_H.c.o -MF CMakeFiles/cmTC_066c5.dir/HAVE_SYS_SELECT_H.c.o.d -o CMakeFiles/cmTC_066c5.dir/HAVE_SYS_SELECT_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SELECT_H.c
+Linking C executable cmTC_066c5
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_066c5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_066c5.dir/HAVE_SYS_SELECT_H.c.o -o cmTC_066c5 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7553a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7553a.dir/build.make CMakeFiles/cmTC_7553a.dir/build
+Building C object CMakeFiles/cmTC_7553a.dir/HAVE_SYS_SOCKET_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_7553a.dir/HAVE_SYS_SOCKET_H.c.o -MF CMakeFiles/cmTC_7553a.dir/HAVE_SYS_SOCKET_H.c.o.d -o CMakeFiles/cmTC_7553a.dir/HAVE_SYS_SOCKET_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKET_H.c
+Linking C executable cmTC_7553a
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7553a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7553a.dir/HAVE_SYS_SOCKET_H.c.o -o cmTC_7553a 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_87caf/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_87caf.dir/build.make CMakeFiles/cmTC_87caf.dir/build
+Building C object CMakeFiles/cmTC_87caf.dir/HAVE_SYS_SOCKIO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_87caf.dir/HAVE_SYS_SOCKIO_H.c.o -MF CMakeFiles/cmTC_87caf.dir/HAVE_SYS_SOCKIO_H.c.o.d -o CMakeFiles/cmTC_87caf.dir/HAVE_SYS_SOCKIO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKIO_H.c
+Linking C executable cmTC_87caf
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87caf.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_87caf.dir/HAVE_SYS_SOCKIO_H.c.o -o cmTC_87caf 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dcdd7/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dcdd7.dir/build.make CMakeFiles/cmTC_dcdd7.dir/build
+Building C object CMakeFiles/cmTC_dcdd7.dir/HAVE_SYS_STAT_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_dcdd7.dir/HAVE_SYS_STAT_H.c.o -MF CMakeFiles/cmTC_dcdd7.dir/HAVE_SYS_STAT_H.c.o.d -o CMakeFiles/cmTC_dcdd7.dir/HAVE_SYS_STAT_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STAT_H.c
+Linking C executable cmTC_dcdd7
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcdd7.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dcdd7.dir/HAVE_SYS_STAT_H.c.o -o cmTC_dcdd7 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c53dd/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c53dd.dir/build.make CMakeFiles/cmTC_c53dd.dir/build
+Building C object CMakeFiles/cmTC_c53dd.dir/HAVE_SYS_TIME_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_c53dd.dir/HAVE_SYS_TIME_H.c.o -MF CMakeFiles/cmTC_c53dd.dir/HAVE_SYS_TIME_H.c.o.d -o CMakeFiles/cmTC_c53dd.dir/HAVE_SYS_TIME_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_TIME_H.c
+Linking C executable cmTC_c53dd
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c53dd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c53dd.dir/HAVE_SYS_TIME_H.c.o -o cmTC_c53dd 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_156da/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_156da.dir/build.make CMakeFiles/cmTC_156da.dir/build
+Building C object CMakeFiles/cmTC_156da.dir/HAVE_SYS_UIO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_156da.dir/HAVE_SYS_UIO_H.c.o -MF CMakeFiles/cmTC_156da.dir/HAVE_SYS_UIO_H.c.o.d -o CMakeFiles/cmTC_156da.dir/HAVE_SYS_UIO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UIO_H.c
+Linking C executable cmTC_156da
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_156da.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_156da.dir/HAVE_SYS_UIO_H.c.o -o cmTC_156da 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1dc45/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1dc45.dir/build.make CMakeFiles/cmTC_1dc45.dir/build
+Building C object CMakeFiles/cmTC_1dc45.dir/HAVE_SYS_UN_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_1dc45.dir/HAVE_SYS_UN_H.c.o -MF CMakeFiles/cmTC_1dc45.dir/HAVE_SYS_UN_H.c.o.d -o CMakeFiles/cmTC_1dc45.dir/HAVE_SYS_UN_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c
+Linking C executable cmTC_1dc45
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dc45.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1dc45.dir/HAVE_SYS_UN_H.c.o -o cmTC_1dc45 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8e01e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8e01e.dir/build.make CMakeFiles/cmTC_8e01e.dir/build
+Building C object CMakeFiles/cmTC_8e01e.dir/HAVE_SYS_XATTR_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_8e01e.dir/HAVE_SYS_XATTR_H.c.o -MF CMakeFiles/cmTC_8e01e.dir/HAVE_SYS_XATTR_H.c.o.d -o CMakeFiles/cmTC_8e01e.dir/HAVE_SYS_XATTR_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_XATTR_H.c
+Linking C executable cmTC_8e01e
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e01e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8e01e.dir/HAVE_SYS_XATTR_H.c.o -o cmTC_8e01e 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a4517/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a4517.dir/build.make CMakeFiles/cmTC_a4517.dir/build
+Building C object CMakeFiles/cmTC_a4517.dir/HAVE_ALLOCA_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_a4517.dir/HAVE_ALLOCA_H.c.o -MF CMakeFiles/cmTC_a4517.dir/HAVE_ALLOCA_H.c.o.d -o CMakeFiles/cmTC_a4517.dir/HAVE_ALLOCA_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_ALLOCA_H.c
+Linking C executable cmTC_a4517
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4517.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a4517.dir/HAVE_ALLOCA_H.c.o -o cmTC_a4517 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_720cd/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_720cd.dir/build.make CMakeFiles/cmTC_720cd.dir/build
+Building C object CMakeFiles/cmTC_720cd.dir/HAVE_ARPA_INET_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_720cd.dir/HAVE_ARPA_INET_H.c.o -MF CMakeFiles/cmTC_720cd.dir/HAVE_ARPA_INET_H.c.o.d -o CMakeFiles/cmTC_720cd.dir/HAVE_ARPA_INET_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_INET_H.c
+Linking C executable cmTC_720cd
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_720cd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_720cd.dir/HAVE_ARPA_INET_H.c.o -o cmTC_720cd 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_22a3c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_22a3c.dir/build.make CMakeFiles/cmTC_22a3c.dir/build
+Building C object CMakeFiles/cmTC_22a3c.dir/HAVE_ARPA_TFTP_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_22a3c.dir/HAVE_ARPA_TFTP_H.c.o -MF CMakeFiles/cmTC_22a3c.dir/HAVE_ARPA_TFTP_H.c.o.d -o CMakeFiles/cmTC_22a3c.dir/HAVE_ARPA_TFTP_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_TFTP_H.c
+Linking C executable cmTC_22a3c
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22a3c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_22a3c.dir/HAVE_ARPA_TFTP_H.c.o -o cmTC_22a3c 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c141/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4c141.dir/build.make CMakeFiles/cmTC_4c141.dir/build
+Building C object CMakeFiles/cmTC_4c141.dir/HAVE_ASSERT_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_4c141.dir/HAVE_ASSERT_H.c.o -MF CMakeFiles/cmTC_4c141.dir/HAVE_ASSERT_H.c.o.d -o CMakeFiles/cmTC_4c141.dir/HAVE_ASSERT_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_ASSERT_H.c
+Linking C executable cmTC_4c141
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c141.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4c141.dir/HAVE_ASSERT_H.c.o -o cmTC_4c141 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0aad4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0aad4.dir/build.make CMakeFiles/cmTC_0aad4.dir/build
+Building C object CMakeFiles/cmTC_0aad4.dir/HAVE_ERRNO_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_0aad4.dir/HAVE_ERRNO_H.c.o -MF CMakeFiles/cmTC_0aad4.dir/HAVE_ERRNO_H.c.o.d -o CMakeFiles/cmTC_0aad4.dir/HAVE_ERRNO_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_ERRNO_H.c
+Linking C executable cmTC_0aad4
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0aad4.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0aad4.dir/HAVE_ERRNO_H.c.o -o cmTC_0aad4 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_157d5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_157d5.dir/build.make CMakeFiles/cmTC_157d5.dir/build
+Building C object CMakeFiles/cmTC_157d5.dir/HAVE_FCNTL_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_157d5.dir/HAVE_FCNTL_H.c.o -MF CMakeFiles/cmTC_157d5.dir/HAVE_FCNTL_H.c.o.d -o CMakeFiles/cmTC_157d5.dir/HAVE_FCNTL_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_FCNTL_H.c
+Linking C executable cmTC_157d5
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_157d5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_157d5.dir/HAVE_FCNTL_H.c.o -o cmTC_157d5 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_01f80/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_01f80.dir/build.make CMakeFiles/cmTC_01f80.dir/build
+Building C object CMakeFiles/cmTC_01f80.dir/HAVE_IFADDRS_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_01f80.dir/HAVE_IFADDRS_H.c.o -MF CMakeFiles/cmTC_01f80.dir/HAVE_IFADDRS_H.c.o.d -o CMakeFiles/cmTC_01f80.dir/HAVE_IFADDRS_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_IFADDRS_H.c
+Linking C executable cmTC_01f80
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01f80.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_01f80.dir/HAVE_IFADDRS_H.c.o -o cmTC_01f80 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_13729/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_13729.dir/build.make CMakeFiles/cmTC_13729.dir/build
+Building C object CMakeFiles/cmTC_13729.dir/HAVE_LIBGEN_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_13729.dir/HAVE_LIBGEN_H.c.o -MF CMakeFiles/cmTC_13729.dir/HAVE_LIBGEN_H.c.o.d -o CMakeFiles/cmTC_13729.dir/HAVE_LIBGEN_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_LIBGEN_H.c
+Linking C executable cmTC_13729
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13729.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_13729.dir/HAVE_LIBGEN_H.c.o -o cmTC_13729 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_684b3/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_684b3.dir/build.make CMakeFiles/cmTC_684b3.dir/build
+Building C object CMakeFiles/cmTC_684b3.dir/HAVE_LOCALE_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_684b3.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_684b3.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_684b3.dir/HAVE_LOCALE_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_LOCALE_H.c
+Linking C executable cmTC_684b3
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_684b3.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_684b3.dir/HAVE_LOCALE_H.c.o -o cmTC_684b3 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_84216/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_84216.dir/build.make CMakeFiles/cmTC_84216.dir/build
+Building C object CMakeFiles/cmTC_84216.dir/HAVE_NET_IF_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_84216.dir/HAVE_NET_IF_H.c.o -MF CMakeFiles/cmTC_84216.dir/HAVE_NET_IF_H.c.o.d -o CMakeFiles/cmTC_84216.dir/HAVE_NET_IF_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_NET_IF_H.c
+Linking C executable cmTC_84216
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84216.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_84216.dir/HAVE_NET_IF_H.c.o -o cmTC_84216 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a8b4e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a8b4e.dir/build.make CMakeFiles/cmTC_a8b4e.dir/build
+Building C object CMakeFiles/cmTC_a8b4e.dir/HAVE_NETDB_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_a8b4e.dir/HAVE_NETDB_H.c.o -MF CMakeFiles/cmTC_a8b4e.dir/HAVE_NETDB_H.c.o.d -o CMakeFiles/cmTC_a8b4e.dir/HAVE_NETDB_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_NETDB_H.c
+Linking C executable cmTC_a8b4e
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8b4e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a8b4e.dir/HAVE_NETDB_H.c.o -o cmTC_a8b4e 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e57c2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e57c2.dir/build.make CMakeFiles/cmTC_e57c2.dir/build
+Building C object CMakeFiles/cmTC_e57c2.dir/HAVE_NETINET_IN_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_e57c2.dir/HAVE_NETINET_IN_H.c.o -MF CMakeFiles/cmTC_e57c2.dir/HAVE_NETINET_IN_H.c.o.d -o CMakeFiles/cmTC_e57c2.dir/HAVE_NETINET_IN_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_IN_H.c
+Linking C executable cmTC_e57c2
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e57c2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e57c2.dir/HAVE_NETINET_IN_H.c.o -o cmTC_e57c2 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_669ff/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_669ff.dir/build.make CMakeFiles/cmTC_669ff.dir/build
+Building C object CMakeFiles/cmTC_669ff.dir/HAVE_NETINET_TCP_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_669ff.dir/HAVE_NETINET_TCP_H.c.o -MF CMakeFiles/cmTC_669ff.dir/HAVE_NETINET_TCP_H.c.o.d -o CMakeFiles/cmTC_669ff.dir/HAVE_NETINET_TCP_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_TCP_H.c
+Linking C executable cmTC_669ff
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_669ff.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_669ff.dir/HAVE_NETINET_TCP_H.c.o -o cmTC_669ff 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_127fe/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_127fe.dir/build.make CMakeFiles/cmTC_127fe.dir/build
+Building C object CMakeFiles/cmTC_127fe.dir/HAVE_POLL_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_127fe.dir/HAVE_POLL_H.c.o -MF CMakeFiles/cmTC_127fe.dir/HAVE_POLL_H.c.o.d -o CMakeFiles/cmTC_127fe.dir/HAVE_POLL_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_POLL_H.c
+Linking C executable cmTC_127fe
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_127fe.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_127fe.dir/HAVE_POLL_H.c.o -o cmTC_127fe 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_57e08/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_57e08.dir/build.make CMakeFiles/cmTC_57e08.dir/build
+Building C object CMakeFiles/cmTC_57e08.dir/HAVE_PWD_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_57e08.dir/HAVE_PWD_H.c.o -MF CMakeFiles/cmTC_57e08.dir/HAVE_PWD_H.c.o.d -o CMakeFiles/cmTC_57e08.dir/HAVE_PWD_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_PWD_H.c
+Linking C executable cmTC_57e08
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57e08.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_57e08.dir/HAVE_PWD_H.c.o -o cmTC_57e08 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_71c89/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_71c89.dir/build.make CMakeFiles/cmTC_71c89.dir/build
+Building C object CMakeFiles/cmTC_71c89.dir/HAVE_SETJMP_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_71c89.dir/HAVE_SETJMP_H.c.o -MF CMakeFiles/cmTC_71c89.dir/HAVE_SETJMP_H.c.o.d -o CMakeFiles/cmTC_71c89.dir/HAVE_SETJMP_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SETJMP_H.c
+Linking C executable cmTC_71c89
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71c89.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_71c89.dir/HAVE_SETJMP_H.c.o -o cmTC_71c89 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_db87c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_db87c.dir/build.make CMakeFiles/cmTC_db87c.dir/build
+Building C object CMakeFiles/cmTC_db87c.dir/HAVE_SIGNAL_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_db87c.dir/HAVE_SIGNAL_H.c.o -MF CMakeFiles/cmTC_db87c.dir/HAVE_SIGNAL_H.c.o.d -o CMakeFiles/cmTC_db87c.dir/HAVE_SIGNAL_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SIGNAL_H.c
+Linking C executable cmTC_db87c
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db87c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_db87c.dir/HAVE_SIGNAL_H.c.o -o cmTC_db87c 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a8ffe/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a8ffe.dir/build.make CMakeFiles/cmTC_a8ffe.dir/build
+Building C object CMakeFiles/cmTC_a8ffe.dir/HAVE_STDBOOL_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_a8ffe.dir/HAVE_STDBOOL_H.c.o -MF CMakeFiles/cmTC_a8ffe.dir/HAVE_STDBOOL_H.c.o.d -o CMakeFiles/cmTC_a8ffe.dir/HAVE_STDBOOL_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_STDBOOL_H.c
+Linking C executable cmTC_a8ffe
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8ffe.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a8ffe.dir/HAVE_STDBOOL_H.c.o -o cmTC_a8ffe 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7b8ef/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7b8ef.dir/build.make CMakeFiles/cmTC_7b8ef.dir/build
+Building C object CMakeFiles/cmTC_7b8ef.dir/HAVE_STDLIB_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_7b8ef.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_7b8ef.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_7b8ef.dir/HAVE_STDLIB_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_STDLIB_H.c
+Linking C executable cmTC_7b8ef
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b8ef.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7b8ef.dir/HAVE_STDLIB_H.c.o -o cmTC_7b8ef 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b6bab/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b6bab.dir/build.make CMakeFiles/cmTC_b6bab.dir/build
+Building C object CMakeFiles/cmTC_b6bab.dir/HAVE_STRING_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_b6bab.dir/HAVE_STRING_H.c.o -MF CMakeFiles/cmTC_b6bab.dir/HAVE_STRING_H.c.o.d -o CMakeFiles/cmTC_b6bab.dir/HAVE_STRING_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_STRING_H.c
+Linking C executable cmTC_b6bab
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6bab.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b6bab.dir/HAVE_STRING_H.c.o -o cmTC_b6bab 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_75d7e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_75d7e.dir/build.make CMakeFiles/cmTC_75d7e.dir/build
+Building C object CMakeFiles/cmTC_75d7e.dir/HAVE_STRINGS_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_75d7e.dir/HAVE_STRINGS_H.c.o -MF CMakeFiles/cmTC_75d7e.dir/HAVE_STRINGS_H.c.o.d -o CMakeFiles/cmTC_75d7e.dir/HAVE_STRINGS_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_STRINGS_H.c
+Linking C executable cmTC_75d7e
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75d7e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_75d7e.dir/HAVE_STRINGS_H.c.o -o cmTC_75d7e 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f7101/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f7101.dir/build.make CMakeFiles/cmTC_f7101.dir/build
+Building C object CMakeFiles/cmTC_f7101.dir/HAVE_TERMIOS_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_f7101.dir/HAVE_TERMIOS_H.c.o -MF CMakeFiles/cmTC_f7101.dir/HAVE_TERMIOS_H.c.o.d -o CMakeFiles/cmTC_f7101.dir/HAVE_TERMIOS_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_TERMIOS_H.c
+Linking C executable cmTC_f7101
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7101.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f7101.dir/HAVE_TERMIOS_H.c.o -o cmTC_f7101 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f1793/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f1793.dir/build.make CMakeFiles/cmTC_f1793.dir/build
+Building C object CMakeFiles/cmTC_f1793.dir/HAVE_TIME_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_f1793.dir/HAVE_TIME_H.c.o -MF CMakeFiles/cmTC_f1793.dir/HAVE_TIME_H.c.o.d -o CMakeFiles/cmTC_f1793.dir/HAVE_TIME_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_TIME_H.c
+Linking C executable cmTC_f1793
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1793.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f1793.dir/HAVE_TIME_H.c.o -o cmTC_f1793 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_07030/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_07030.dir/build.make CMakeFiles/cmTC_07030.dir/build
+Building C object CMakeFiles/cmTC_07030.dir/HAVE_UTIME_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_07030.dir/HAVE_UTIME_H.c.o -MF CMakeFiles/cmTC_07030.dir/HAVE_UTIME_H.c.o.d -o CMakeFiles/cmTC_07030.dir/HAVE_UTIME_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_UTIME_H.c
+Linking C executable cmTC_07030
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07030.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_07030.dir/HAVE_UTIME_H.c.o -o cmTC_07030 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_04753/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_04753.dir/build.make CMakeFiles/cmTC_04753.dir/build
+Building C object CMakeFiles/cmTC_04753.dir/HAVE_DLFCN_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_04753.dir/HAVE_DLFCN_H.c.o -MF CMakeFiles/cmTC_04753.dir/HAVE_DLFCN_H.c.o.d -o CMakeFiles/cmTC_04753.dir/HAVE_DLFCN_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_DLFCN_H.c
+Linking C executable cmTC_04753
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04753.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_04753.dir/HAVE_DLFCN_H.c.o -o cmTC_04753 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;memory.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cfd25/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cfd25.dir/build.make CMakeFiles/cmTC_cfd25.dir/build
+Building C object CMakeFiles/cmTC_cfd25.dir/HAVE_MEMORY_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_cfd25.dir/HAVE_MEMORY_H.c.o -MF CMakeFiles/cmTC_cfd25.dir/HAVE_MEMORY_H.c.o.d -o CMakeFiles/cmTC_cfd25.dir/HAVE_MEMORY_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_MEMORY_H.c
+Linking C executable cmTC_cfd25
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfd25.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cfd25.dir/HAVE_MEMORY_H.c.o -o cmTC_cfd25 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;memory.h;netinet/if_ether.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_74844/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_74844.dir/build.make CMakeFiles/cmTC_74844.dir/build
+Building C object CMakeFiles/cmTC_74844.dir/HAVE_NETINET_IF_ETHER_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_74844.dir/HAVE_NETINET_IF_ETHER_H.c.o -MF CMakeFiles/cmTC_74844.dir/HAVE_NETINET_IF_ETHER_H.c.o.d -o CMakeFiles/cmTC_74844.dir/HAVE_NETINET_IF_ETHER_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_IF_ETHER_H.c
+Linking C executable cmTC_74844
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74844.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_74844.dir/HAVE_NETINET_IF_ETHER_H.c.o -o cmTC_74844 
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;memory.h;netinet/if_ether.h;stdint.h;sys/utsname.h exist passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e933a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e933a.dir/build.make CMakeFiles/cmTC_e933a.dir/build
+Building C object CMakeFiles/cmTC_e933a.dir/HAVE_SYS_UTSNAME_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_e933a.dir/HAVE_SYS_UTSNAME_H.c.o -MF CMakeFiles/cmTC_e933a.dir/HAVE_SYS_UTSNAME_H.c.o.d -o CMakeFiles/cmTC_e933a.dir/HAVE_SYS_UTSNAME_H.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c
+Linking C executable cmTC_e933a
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e933a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e933a.dir/HAVE_SYS_UTSNAME_H.c.o -o cmTC_e933a 
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f45eb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f45eb.dir/build.make CMakeFiles/cmTC_f45eb.dir/build
+Building C object CMakeFiles/cmTC_f45eb.dir/SIZEOF_SIZE_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_f45eb.dir/SIZEOF_SIZE_T.c.o -MF CMakeFiles/cmTC_f45eb.dir/SIZEOF_SIZE_T.c.o.d -o CMakeFiles/cmTC_f45eb.dir/SIZEOF_SIZE_T.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_f45eb
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f45eb.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f45eb.dir/SIZEOF_SIZE_T.c.o -o cmTC_f45eb 
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0029a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0029a.dir/build.make CMakeFiles/cmTC_0029a.dir/build
+Building C object CMakeFiles/cmTC_0029a.dir/SIZEOF_SSIZE_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_0029a.dir/SIZEOF_SSIZE_T.c.o -MF CMakeFiles/cmTC_0029a.dir/SIZEOF_SSIZE_T.c.o.d -o CMakeFiles/cmTC_0029a.dir/SIZEOF_SSIZE_T.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_SSIZE_T.c
+Linking C executable cmTC_0029a
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0029a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0029a.dir/SIZEOF_SSIZE_T.c.o -o cmTC_0029a 
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_311ba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_311ba.dir/build.make CMakeFiles/cmTC_311ba.dir/build
+Building C object CMakeFiles/cmTC_311ba.dir/SIZEOF_LONG_LONG.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_311ba.dir/SIZEOF_LONG_LONG.c.o -MF CMakeFiles/cmTC_311ba.dir/SIZEOF_LONG_LONG.c.o.d -o CMakeFiles/cmTC_311ba.dir/SIZEOF_LONG_LONG.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_311ba
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_311ba.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_311ba.dir/SIZEOF_LONG_LONG.c.o -o cmTC_311ba 
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_65c81/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_65c81.dir/build.make CMakeFiles/cmTC_65c81.dir/build
+Building C object CMakeFiles/cmTC_65c81.dir/SIZEOF_LONG.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_65c81.dir/SIZEOF_LONG.c.o -MF CMakeFiles/cmTC_65c81.dir/SIZEOF_LONG.c.o.d -o CMakeFiles/cmTC_65c81.dir/SIZEOF_LONG.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_65c81
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65c81.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_65c81.dir/SIZEOF_LONG.c.o -o cmTC_65c81 
+
+
+
+Determining size of short passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e9381/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e9381.dir/build.make CMakeFiles/cmTC_e9381.dir/build
+Building C object CMakeFiles/cmTC_e9381.dir/SIZEOF_SHORT.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_e9381.dir/SIZEOF_SHORT.c.o -MF CMakeFiles/cmTC_e9381.dir/SIZEOF_SHORT.c.o.d -o CMakeFiles/cmTC_e9381.dir/SIZEOF_SHORT.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_SHORT.c
+Linking C executable cmTC_e9381
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9381.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e9381.dir/SIZEOF_SHORT.c.o -o cmTC_e9381 
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_632c2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_632c2.dir/build.make CMakeFiles/cmTC_632c2.dir/build
+Building C object CMakeFiles/cmTC_632c2.dir/SIZEOF_INT.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_632c2.dir/SIZEOF_INT.c.o -MF CMakeFiles/cmTC_632c2.dir/SIZEOF_INT.c.o.d -o CMakeFiles/cmTC_632c2.dir/SIZEOF_INT.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_632c2
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_632c2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_632c2.dir/SIZEOF_INT.c.o -o cmTC_632c2 
+
+
+
+Determining size of long double passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5914a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5914a.dir/build.make CMakeFiles/cmTC_5914a.dir/build
+Building C object CMakeFiles/cmTC_5914a.dir/SIZEOF_LONG_DOUBLE.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_5914a.dir/SIZEOF_LONG_DOUBLE.c.o -MF CMakeFiles/cmTC_5914a.dir/SIZEOF_LONG_DOUBLE.c.o.d -o CMakeFiles/cmTC_5914a.dir/SIZEOF_LONG_DOUBLE.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_LONG_DOUBLE.c
+Linking C executable cmTC_5914a
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5914a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5914a.dir/SIZEOF_LONG_DOUBLE.c.o -o cmTC_5914a 
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1a78c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1a78c.dir/build.make CMakeFiles/cmTC_1a78c.dir/build
+Building C object CMakeFiles/cmTC_1a78c.dir/SIZEOF_TIME_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_1a78c.dir/SIZEOF_TIME_T.c.o -MF CMakeFiles/cmTC_1a78c.dir/SIZEOF_TIME_T.c.o.d -o CMakeFiles/cmTC_1a78c.dir/SIZEOF_TIME_T.c.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/CMakeFiles/CheckTypeSize/SIZEOF_TIME_T.c
+Linking C executable cmTC_1a78c
+/opt/homebrew/Cellar/cmake/3.24.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a78c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1a78c.dir/SIZEOF_TIME_T.c.o -o cmTC_1a78c 
+
+
+
