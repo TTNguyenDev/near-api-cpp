@@ -1,1 +1,6 @@
+# COMPILE AND RUN
+```
+cmake -S . -B build
+cd build && make
 g++ -std=c++17 -o main -lcpr main.cpp
+```

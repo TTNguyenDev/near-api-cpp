@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/lib/PicoSHA2 -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/bip39.dir/bip39.cpp.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/bip39.cpp",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/bip39.cpp"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/lib/PicoSHA2 -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/bip39.dir/util.cpp.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/util.cpp",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/util.cpp"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/bip39_tests.dir/src/IoT/main.cpp.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/src/IoT/main.cpp",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/src/IoT/main.cpp"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/bip39_tests.dir/src/bip39_tests.cpp.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/src/bip39_tests.cpp",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/src/bip39_tests.cpp"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/bip39_tests.dir/src/word_list_tests.cpp.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/src/word_list_tests.cpp",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/src/word_list_tests.cpp"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest/googlemock",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk  -DGTEST_HAS_PTHREAD=1   -std=c++11 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock/src/gmock-all.cc",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest/googlemock",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk  -DGTEST_HAS_PTHREAD=1   -std=c++11 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock/src/gmock_main.cc",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest/googlemock/gtest",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk  -DGTEST_HAS_PTHREAD=1   -std=c++11 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/src/gtest-all.cc",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest/googlemock/gtest",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk  -DGTEST_HAS_PTHREAD=1   -std=c++11 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/src/gtest_main.cc",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/examples",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/bip39_example.dir/main.cpp.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/examples/main.cpp",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/examples/main.cpp"
+},
+{
+  "directory": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/make_dictionary",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src -I/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/bip39_make_dictionary.dir/main.cpp.o -c /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/make_dictionary/main.cpp",
+  "file": "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/make_dictionary/main.cpp"
+}
+]
