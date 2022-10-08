@@ -4,7 +4,7 @@
 # compile C with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/src/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/cpr/include
+C_INCLUDES = -I/opt/homebrew/Cellar/openssl@3/3.0.5/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x/include -isystem /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/cpr/include
 
 C_FLAGSx86_64 = -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
 

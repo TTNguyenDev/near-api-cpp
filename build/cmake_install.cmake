@@ -38,13 +38,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
+  # Include the install script for each subdirectory.
+  include("/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip3x/cmake_install.cmake")
   include("/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/cpr/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

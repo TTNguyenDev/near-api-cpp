@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/opt/homebrew/Cellar/cmake/3.24.0/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/opt/homebrew/Cellar/cmake/3.24.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -162,19 +182,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named bip44
-
-# Build rule for target.
-bip44: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bip44
-.PHONY : bip44
-
-# fast build rule for target.
-bip44/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/build
-.PHONY : bip44/fast
-
-#=============================================================================
 # Target rules for targets named ed25519
 
 # Build rule for target.
@@ -210,99 +217,21 @@ bip39: cmake_check_build_system
 
 # fast build rule for target.
 bip39/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/src/CMakeFiles/bip39.dir/build.make bip39/src/CMakeFiles/bip39.dir/build
+	$(MAKE) $(MAKESILENT) -f bip3x/CMakeFiles/bip39.dir/build.make bip3x/CMakeFiles/bip39.dir/build
 .PHONY : bip39/fast
 
 #=============================================================================
-# Target rules for targets named bip39_tests
+# Target rules for targets named cbip39
 
 # Build rule for target.
-bip39_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bip39_tests
-.PHONY : bip39_tests
+cbip39: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cbip39
+.PHONY : cbip39
 
 # fast build rule for target.
-bip39_tests/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/test/CMakeFiles/bip39_tests.dir/build.make bip39/test/CMakeFiles/bip39_tests.dir/build
-.PHONY : bip39_tests/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/test/lib/googletest/googlemock/CMakeFiles/gmock.dir/build.make bip39/test/lib/googletest/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make bip39/test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/test/lib/googletest/googlemock/gtest/CMakeFiles/gtest.dir/build.make bip39/test/lib/googletest/googlemock/gtest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/test/lib/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make bip39/test/lib/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named bip39_example
-
-# Build rule for target.
-bip39_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bip39_example
-.PHONY : bip39_example
-
-# fast build rule for target.
-bip39_example/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/examples/CMakeFiles/bip39_example.dir/build.make bip39/examples/CMakeFiles/bip39_example.dir/build
-.PHONY : bip39_example/fast
-
-#=============================================================================
-# Target rules for targets named bip39_make_dictionary
-
-# Build rule for target.
-bip39_make_dictionary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bip39_make_dictionary
-.PHONY : bip39_make_dictionary
-
-# fast build rule for target.
-bip39_make_dictionary/fast:
-	$(MAKE) $(MAKESILENT) -f bip39/make_dictionary/CMakeFiles/bip39_make_dictionary.dir/build.make bip39/make_dictionary/CMakeFiles/bip39_make_dictionary.dir/build
-.PHONY : bip39_make_dictionary/fast
+cbip39/fast:
+	$(MAKE) $(MAKESILENT) -f bip3x/CMakeFiles/cbip39.dir/build.make bip3x/CMakeFiles/cbip39.dir/build
+.PHONY : cbip39/fast
 
 #=============================================================================
 # Target rules for targets named zlib
@@ -355,174 +284,6 @@ cpr: cmake_check_build_system
 cpr/fast:
 	$(MAKE) $(MAKESILENT) -f cpr/cpr/CMakeFiles/cpr.dir/build.make cpr/cpr/CMakeFiles/cpr.dir/build
 .PHONY : cpr/fast
-
-bip-implement-cpp/src/crypto/hmac_sha512.o: bip-implement-cpp/src/crypto/hmac_sha512.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/hmac_sha512.o
-
-# target to build an object file
-bip-implement-cpp/src/crypto/hmac_sha512.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/hmac_sha512.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/hmac_sha512.cpp.o
-
-bip-implement-cpp/src/crypto/hmac_sha512.i: bip-implement-cpp/src/crypto/hmac_sha512.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/hmac_sha512.i
-
-# target to preprocess a source file
-bip-implement-cpp/src/crypto/hmac_sha512.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/hmac_sha512.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/hmac_sha512.cpp.i
-
-bip-implement-cpp/src/crypto/hmac_sha512.s: bip-implement-cpp/src/crypto/hmac_sha512.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/hmac_sha512.s
-
-# target to generate assembly for a file
-bip-implement-cpp/src/crypto/hmac_sha512.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/hmac_sha512.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/hmac_sha512.cpp.s
-
-bip-implement-cpp/src/crypto/mnemoniccode.o: bip-implement-cpp/src/crypto/mnemoniccode.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/mnemoniccode.o
-
-# target to build an object file
-bip-implement-cpp/src/crypto/mnemoniccode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/mnemoniccode.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/mnemoniccode.cpp.o
-
-bip-implement-cpp/src/crypto/mnemoniccode.i: bip-implement-cpp/src/crypto/mnemoniccode.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/mnemoniccode.i
-
-# target to preprocess a source file
-bip-implement-cpp/src/crypto/mnemoniccode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/mnemoniccode.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/mnemoniccode.cpp.i
-
-bip-implement-cpp/src/crypto/mnemoniccode.s: bip-implement-cpp/src/crypto/mnemoniccode.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/mnemoniccode.s
-
-# target to generate assembly for a file
-bip-implement-cpp/src/crypto/mnemoniccode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/mnemoniccode.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/mnemoniccode.cpp.s
-
-bip-implement-cpp/src/crypto/pbkdf2sha512.o: bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/pbkdf2sha512.o
-
-# target to build an object file
-bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.o
-
-bip-implement-cpp/src/crypto/pbkdf2sha512.i: bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/pbkdf2sha512.i
-
-# target to preprocess a source file
-bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.i
-
-bip-implement-cpp/src/crypto/pbkdf2sha512.s: bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/pbkdf2sha512.s
-
-# target to generate assembly for a file
-bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/pbkdf2sha512.cpp.s
-
-bip-implement-cpp/src/crypto/sha512.o: bip-implement-cpp/src/crypto/sha512.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/sha512.o
-
-# target to build an object file
-bip-implement-cpp/src/crypto/sha512.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/sha512.cpp.o
-.PHONY : bip-implement-cpp/src/crypto/sha512.cpp.o
-
-bip-implement-cpp/src/crypto/sha512.i: bip-implement-cpp/src/crypto/sha512.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/sha512.i
-
-# target to preprocess a source file
-bip-implement-cpp/src/crypto/sha512.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/sha512.cpp.i
-.PHONY : bip-implement-cpp/src/crypto/sha512.cpp.i
-
-bip-implement-cpp/src/crypto/sha512.s: bip-implement-cpp/src/crypto/sha512.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/sha512.s
-
-# target to generate assembly for a file
-bip-implement-cpp/src/crypto/sha512.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/crypto/sha512.cpp.s
-.PHONY : bip-implement-cpp/src/crypto/sha512.cpp.s
-
-bip-implement-cpp/src/keynode/CoinClasses/hdkeys.o: bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.o
-.PHONY : bip-implement-cpp/src/keynode/CoinClasses/hdkeys.o
-
-# target to build an object file
-bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.o
-.PHONY : bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.o
-
-bip-implement-cpp/src/keynode/CoinClasses/hdkeys.i: bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.i
-.PHONY : bip-implement-cpp/src/keynode/CoinClasses/hdkeys.i
-
-# target to preprocess a source file
-bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.i
-.PHONY : bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.i
-
-bip-implement-cpp/src/keynode/CoinClasses/hdkeys.s: bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.s
-.PHONY : bip-implement-cpp/src/keynode/CoinClasses/hdkeys.s
-
-# target to generate assembly for a file
-bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.s
-.PHONY : bip-implement-cpp/src/keynode/CoinClasses/hdkeys.cpp.s
-
-bip-implement-cpp/src/keynode/keynode.o: bip-implement-cpp/src/keynode/keynode.cpp.o
-.PHONY : bip-implement-cpp/src/keynode/keynode.o
-
-# target to build an object file
-bip-implement-cpp/src/keynode/keynode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/keynode.cpp.o
-.PHONY : bip-implement-cpp/src/keynode/keynode.cpp.o
-
-bip-implement-cpp/src/keynode/keynode.i: bip-implement-cpp/src/keynode/keynode.cpp.i
-.PHONY : bip-implement-cpp/src/keynode/keynode.i
-
-# target to preprocess a source file
-bip-implement-cpp/src/keynode/keynode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/keynode.cpp.i
-.PHONY : bip-implement-cpp/src/keynode/keynode.cpp.i
-
-bip-implement-cpp/src/keynode/keynode.s: bip-implement-cpp/src/keynode/keynode.cpp.s
-.PHONY : bip-implement-cpp/src/keynode/keynode.s
-
-# target to generate assembly for a file
-bip-implement-cpp/src/keynode/keynode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/keynode.cpp.s
-.PHONY : bip-implement-cpp/src/keynode/keynode.cpp.s
-
-bip-implement-cpp/src/keynode/logger.o: bip-implement-cpp/src/keynode/logger.cpp.o
-.PHONY : bip-implement-cpp/src/keynode/logger.o
-
-# target to build an object file
-bip-implement-cpp/src/keynode/logger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/logger.cpp.o
-.PHONY : bip-implement-cpp/src/keynode/logger.cpp.o
-
-bip-implement-cpp/src/keynode/logger.i: bip-implement-cpp/src/keynode/logger.cpp.i
-.PHONY : bip-implement-cpp/src/keynode/logger.i
-
-# target to preprocess a source file
-bip-implement-cpp/src/keynode/logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/logger.cpp.i
-.PHONY : bip-implement-cpp/src/keynode/logger.cpp.i
-
-bip-implement-cpp/src/keynode/logger.s: bip-implement-cpp/src/keynode/logger.cpp.s
-.PHONY : bip-implement-cpp/src/keynode/logger.s
-
-# target to generate assembly for a file
-bip-implement-cpp/src/keynode/logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bip44.dir/build.make CMakeFiles/bip44.dir/bip-implement-cpp/src/keynode/logger.cpp.s
-.PHONY : bip-implement-cpp/src/keynode/logger.cpp.s
 
 ed25519/add_scalar.o: ed25519/add_scalar.c.o
 .PHONY : ed25519/add_scalar.o
@@ -799,43 +560,17 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... bip39"
-	@echo "... bip39_example"
-	@echo "... bip39_make_dictionary"
-	@echo "... bip39_tests"
-	@echo "... bip44"
+	@echo "... cbip39"
 	@echo "... cpr"
 	@echo "... ed25519"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest"
-	@echo "... gtest_main"
 	@echo "... libcurl"
 	@echo "... near-api-cpp-test"
 	@echo "... zlib"
-	@echo "... bip-implement-cpp/src/crypto/hmac_sha512.o"
-	@echo "... bip-implement-cpp/src/crypto/hmac_sha512.i"
-	@echo "... bip-implement-cpp/src/crypto/hmac_sha512.s"
-	@echo "... bip-implement-cpp/src/crypto/mnemoniccode.o"
-	@echo "... bip-implement-cpp/src/crypto/mnemoniccode.i"
-	@echo "... bip-implement-cpp/src/crypto/mnemoniccode.s"
-	@echo "... bip-implement-cpp/src/crypto/pbkdf2sha512.o"
-	@echo "... bip-implement-cpp/src/crypto/pbkdf2sha512.i"
-	@echo "... bip-implement-cpp/src/crypto/pbkdf2sha512.s"
-	@echo "... bip-implement-cpp/src/crypto/sha512.o"
-	@echo "... bip-implement-cpp/src/crypto/sha512.i"
-	@echo "... bip-implement-cpp/src/crypto/sha512.s"
-	@echo "... bip-implement-cpp/src/keynode/CoinClasses/hdkeys.o"
-	@echo "... bip-implement-cpp/src/keynode/CoinClasses/hdkeys.i"
-	@echo "... bip-implement-cpp/src/keynode/CoinClasses/hdkeys.s"
-	@echo "... bip-implement-cpp/src/keynode/keynode.o"
-	@echo "... bip-implement-cpp/src/keynode/keynode.i"
-	@echo "... bip-implement-cpp/src/keynode/keynode.s"
-	@echo "... bip-implement-cpp/src/keynode/logger.o"
-	@echo "... bip-implement-cpp/src/keynode/logger.i"
-	@echo "... bip-implement-cpp/src/keynode/logger.s"
 	@echo "... ed25519/add_scalar.o"
 	@echo "... ed25519/add_scalar.i"
 	@echo "... ed25519/add_scalar.s"

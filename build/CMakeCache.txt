@@ -17,9 +17,6 @@
 //Installation directory for executables
 BIN_INSTALL_DIR:PATH=/usr/local/bin
 
-//Builds the googlemock subproject
-BUILD_GMOCK:BOOL=ON
-
 //Build shared libraries
 BUILD_SHARED_LIBS:BOOL=ON
 
@@ -311,8 +308,29 @@ CMAKE_USE_WOLFSSL:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a program.
+CONAN_BIN:FILEPATH=CONAN_BIN-NOTFOUND
+
 //Path to a library.
 COREFOUNDATION_FRAMEWORK:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreFoundation.framework
+
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
 
 //Set to ON to build cpr tests.
 CPR_BUILD_TESTS:BOOL=OFF
@@ -397,10 +415,6 @@ CURL_CA_BUNDLE_SET:BOOL=TRUE
 
 //Set ON to use built-in CA store of TLS backend. Defaults to OFF
 CURL_CA_FALLBACK:BOOL=OFF
-
-//Location of default CA path. Set 'none' to disable or 'auto'
-// for auto-detection. Defaults to 'auto'.
-CURL_CA_PATH:STRING=/etc/ssl/certs
 
 //Path to the CA bundle has been set
 CURL_CA_PATH_SET:BOOL=TRUE
@@ -538,6 +552,15 @@ CURL_ZSTD:BOOL=OFF
 //Set to ON to enable c-ares support
 ENABLE_ARES:BOOL=OFF
 
+//Enable compiling pure C for other language bindings
+ENABLE_BIP39_C:BOOL=ON
+
+//Enable compiling for android/jre
+ENABLE_BIP39_JNI:BOOL=ON
+
+//Enable conan dependencies instead of system
+ENABLE_CONAN:BOOL=ON
+
 //Set to ON to build with TrackMemory feature enabled
 ENABLE_CURLDEBUG:BOOL=OFF
 
@@ -546,6 +569,12 @@ ENABLE_DEBUG:BOOL=OFF
 
 //Define if you want to enable IPv6 support
 ENABLE_IPV6:BOOL=ON
+
+//Build shared core library instead of static
+ENABLE_SHARED:BOOL=OFF
+
+//Compile unit google tests
+ENABLE_TEST:BOOL=OFF
 
 //Set to ON to enable threaded DNS lookup
 ENABLE_THREADED_RESOLVER:BOOL=ON
@@ -586,12 +615,23 @@ GIT_EXECUTABLE:FILEPATH=/opt/homebrew/bin/git
 //Installation directory for headers
 INC_INSTALL_DIR:PATH=/usr/local/include
 
-//Enable installation of googletest. (Projects embedding googletest
-// may want to turn this OFF.)
-INSTALL_GTEST:BOOL=ON
-
 //Copy minigzip and minideflate during install
 INSTALL_UTILS:BOOL=OFF
+
+//Java AWT Native Interface include directory
+JAVA_AWT_INCLUDE_PATH:PATH=JAVA_AWT_INCLUDE_PATH-NOTFOUND
+
+//Java AWT Native Interface library
+JAVA_AWT_LIBRARY:FILEPATH=/System/Library/Frameworks/JavaVM.framework
+
+//JNI include directory
+JAVA_INCLUDE_PATH:PATH=JAVA_INCLUDE_PATH-NOTFOUND
+
+//jni_md.h jniport.h include directory
+JAVA_INCLUDE_PATH2:PATH=JAVA_INCLUDE_PATH2-NOTFOUND
+
+//Java Virtual Machine library
+JAVA_JVM_LIBRARY:FILEPATH=/System/Library/Frameworks/JavaVM.framework
 
 //Basename of the curl library
 LIBCURL_OUTPUT_NAME:STRING=libcurl
@@ -629,9 +669,6 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
 
-//Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/opt/homebrew/bin/python3.10
-
 //Path to a file.
 RANDOM_FILE:FILEPATH=/dev/urandom
 
@@ -641,6 +678,9 @@ SECURITY_FRAMEWORK:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms
 //Path to a library.
 SYSTEMCONFIGURATION_FRAMEWORK:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/SystemConfiguration.framework
 
+//The directory containing a CMake configuration file for Toolbox.
+Toolbox_DIR:PATH=Toolbox_DIR-NOTFOUND
+
 //Use libidn2 for IDN support
 USE_LIBIDN2:BOOL=ON
 
@@ -649,6 +689,9 @@ USE_NGHTTP2:BOOL=OFF
 
 //Use ngtcp2 and nghttp3 libraries for HTTP/3 support
 USE_NGTCP2:BOOL=OFF
+
+//OFF
+USE_OPENSSL_RANDOM:BOOL=OFF
 
 //Use quiche library for HTTP/3 support
 USE_QUICHE:BOOL=OFF
@@ -745,13 +788,16 @@ bip39_make_dictionary_IS_TOP_LEVEL:STATIC=OFF
 bip39_make_dictionary_SOURCE_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/make_dictionary
 
 //Value Computed by CMake
-bip39_tests_BINARY_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test
+bip3x_BINARY_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip3x
 
 //Value Computed by CMake
-bip39_tests_IS_TOP_LEVEL:STATIC=OFF
+bip3x_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-bip39_tests_SOURCE_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test
+bip3x_SOURCE_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip3x
+
+//Dependencies for the target
+bip44_LIB_DEPENDS:STATIC=general;OpenSSL::SSL;
 
 //Value Computed by CMake
 cpr_BINARY_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/cpr
@@ -761,61 +807,6 @@ cpr_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 cpr_SOURCE_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/cpr
-
-//Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest/googlemock
-
-//Value Computed by CMake
-gmock_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-gmock_LIB_DEPENDS:STATIC=general;gtest;
-
-//Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googlemock
-
-//Build all of Google Mock's own tests.
-gmock_build_tests:BOOL=OFF
-
-//Dependencies for the target
-gmock_main_LIB_DEPENDS:STATIC=general;gmock;
-
-//Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest
-
-//Value Computed by CMake
-googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest
-
-//Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest/googlemock/gtest
-
-//Value Computed by CMake
-gtest_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/bip39/test/lib/googletest/googletest
-
-//Build gtest's sample programs.
-gtest_build_samples:BOOL=OFF
-
-//Build all of gtest's own tests.
-gtest_build_tests:BOOL=OFF
-
-//Disable uses of pthreads in gtest.
-gtest_disable_pthreads:BOOL=OFF
-
-//Use shared (DLL) run-time lib even when Google Test is built
-// as static lib.
-gtest_force_shared_crt:BOOL=OFF
-
-//Build gtest with internal symbols hidden in shared libraries.
-gtest_hide_internal_symbols:BOOL=OFF
-
-//Dependencies for the target
-gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
 near-api-cpp_BINARY_DIR:STATIC=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build
@@ -1013,7 +1004,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1073,6 +1064,18 @@ CMAKE_USE_LIBSSH-ADVANCED:INTERNAL=1
 CMAKE_USE_LIBSSH2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 CPR_LIBRARIES:INTERNAL=cpr
 //ADVANCED property for variable: CURL_DISABLE_ALTSVC
 CURL_DISABLE_ALTSVC-ADVANCED:INTERNAL=1
@@ -1151,8 +1154,6 @@ ENABLE_IPV6-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/opt/homebrew/Cellar/openssl@3/3.0.5/lib/libcrypto.a][/opt/homebrew/Cellar/openssl@3/3.0.5/include][c ][v3.0.5()]
 //Details about finding Perl
 FIND_PACKAGE_MESSAGE_DETAILS_Perl:INTERNAL=[/usr/bin/perl][v5.30.3()]
-//Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/opt/homebrew/bin/python3.10][v3.10.6()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
@@ -1535,6 +1536,16 @@ HTTP_ONLY-ADVANCED:INTERNAL=1
 HTTP_ONLY:INTERNAL=ON
 //ADVANCED property for variable: INSTALL_UTILS
 INSTALL_UTILS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JAVA_AWT_INCLUDE_PATH
+JAVA_AWT_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JAVA_AWT_LIBRARY
+JAVA_AWT_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JAVA_INCLUDE_PATH
+JAVA_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JAVA_INCLUDE_PATH2
+JAVA_INCLUDE_PATH2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JAVA_JVM_LIBRARY
+JAVA_JVM_LIBRARY-ADVANCED:INTERNAL=1
 //Test LEAK_SANITIZER_AVAILABLE
 LEAK_SANITIZER_AVAILABLE:INTERNAL=
 //ADVANCED property for variable: LIBSSH2_INCLUDE_DIR
@@ -1557,8 +1568,6 @@ PERL_EXECUTABLE-ADVANCED:INTERNAL=1
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_EXECUTABLE
-PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: RANDOM_FILE
 RANDOM_FILE-ADVANCED:INTERNAL=1
 //CHECK_TYPE_SIZE: ADDRESS_FAMILY unknown
@@ -1691,23 +1700,9 @@ curl_cv_func_send_test:INTERNAL=1
 curl_cv_recv:INTERNAL=1
 //Test curl_cv_send
 curl_cv_send:INTERNAL=1
-generated_dir:INTERNAL=/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/lib/googletest/googlemock/gtest/generated
-//ADVANCED property for variable: gmock_build_tests
-gmock_build_tests-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_build_samples
-gtest_build_samples-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_build_tests
-gtest_build_tests-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_disable_pthreads
-gtest_disable_pthreads-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_force_shared_crt
-gtest_force_shared_crt-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_hide_internal_symbols
-gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl
 pkgcfg_lib__OPENSSL_ssl-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/opt/homebrew/Cellar/openssl@3/3.0.5/lib
-targets_export_name:INTERNAL=GTestTargets
 

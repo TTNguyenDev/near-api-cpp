@@ -13,8 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/src/CMakeFiles/bip39.dir/DependInfo.cmake"
-  "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/CMakeFiles/bip44.dir/DependInfo.cmake"
+  "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip3x/CMakeFiles/bip39.dir/DependInfo.cmake"
   "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/cpr/cpr/CMakeFiles/cpr.dir/DependInfo.cmake"
   "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/CMakeFiles/ed25519.dir/DependInfo.cmake"
   "/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/_deps/curl-build/lib/CMakeFiles/libcurl.dir/DependInfo.cmake"

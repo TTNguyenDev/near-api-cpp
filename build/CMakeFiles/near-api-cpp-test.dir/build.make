@@ -92,8 +92,7 @@ near__api__cpp__test_EXTERNAL_OBJECTS =
 
 near-api-cpp-test: CMakeFiles/near-api-cpp-test.dir/main.cpp.o
 near-api-cpp-test: CMakeFiles/near-api-cpp-test.dir/build.make
-near-api-cpp-test: bip39/src/libbip39.a
-near-api-cpp-test: libbip44.a
+near-api-cpp-test: bip3x/lib/libbip39.a
 near-api-cpp-test: cpr/cpr/libcpr.1.9.0.dylib
 near-api-cpp-test: libed25519.a
 near-api-cpp-test: /opt/homebrew/Cellar/openssl@3/3.0.5/lib/libssl.a

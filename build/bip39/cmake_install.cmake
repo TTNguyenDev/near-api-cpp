@@ -40,7 +40,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/src/cmake_install.cmake")
-  include("/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/test/cmake_install.cmake")
   include("/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/examples/cmake_install.cmake")
   include("/Users/trietnguyen/Documents/Work/neil_projects/near-api-cpp/build/bip39/make_dictionary/cmake_install.cmake")
 
