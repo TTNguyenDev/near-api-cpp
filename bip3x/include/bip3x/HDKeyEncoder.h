@@ -83,13 +83,13 @@ public:
     static HDKey makeBip32RootKey(const char* mnemonic, BTCNetwork net = bip3x::MainNet);
     static HDKey makeBip32RootKey(const bytes_64& seed, BTCNetwork net = bip3x::MainNet);
     static void makeExtendedKey(HDKey& rootKey, const Derivation& derivation);
-
+    static void derivePath(HDKey& key, const std::string& path, bool priv = true);
 private:
     static void derive(HDKey& key, uint32_t index);
     static HDKey fromSeed(const bytes_data& seed);
     static HDKey fromSeed(const char* seed);
     static HDKey fromSeed(const uint8_t* seed, size_t seedLength);
-    static void derivePath(HDKey& key, const std::string& path, bool priv = true);
+    // static void derivePath(HDKey& key, const std::string& path, bool priv = true);
     static uint32_t fetchFingerprint(HDKey& key);
     static void fillPublicKey(HDKey& key);
     static void serialize(HDKey& key, uint32_t fingerprint, uint32_t version, bool publicKey = false);
