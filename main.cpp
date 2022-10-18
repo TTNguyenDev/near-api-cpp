@@ -22,23 +22,24 @@ int main(int argc, char **argv) {
                                "hobby",   "original", "elephant", "region"};
   // create mnemonic seed
   bytes_64 seed = HDKeyEncoder::makeBip39Seed(words);
-  cout << seed.to_hex() << endl;
+  cout << "SEED: " <<seed.to_hex() << endl;
 
-
-
-
-  // // create root key from mnemonic seed
-  HDKey bip32RootKey = HDKeyEncoder::makeBip32RootKey(seed);
-  // cout << "Root key: " << bip32RootKey.curve_info << endl;
-  //
-  // // and, finally derive keys
-  // // copy key to leave root key
+  // create root key from mnemonic seed
+  HDKey master_key = HDKeyEncoder::ed25519FromSeed(seed);
+  cout << "Root key: " << master_key.privateKey.to_hex() << endl;
+  cout << "CHAIN CODE: " << master_key.chainCode.to_hex() << endl;
+  
+  // HDKeyEncoder::makeExtendedKey(master_key, "m/44'/397'/0'");
+  HDKeyEncoder::nearDerivePath(master_key);
+  cout << "derivePath: " << master_key.chainCode.to_hex() << endl;
+  /*
+  // and, finally derive keys
+  // copy key to leave root key
   HDKey nearKey = bip32RootKey;
 
   std::cout << "Before" << endl << nearKey.privateKey.to_hex() << endl;
   std::cout << nearKey.publicKey.to_hex() << endl;
   // // makeExtendedKey modifies source key
-  HDKeyEncoder::derivePath(nearKey, "m/44'/397'/0'", true);
 
   // HDKeyEncoder::makeExtendedKey(nearKey, "m/44'/397'/0'");
 
@@ -47,23 +48,7 @@ int main(int argc, char **argv) {
   std::cout << "After" << endl << nearKey.privateKey.to_hex() << endl;
   std::cout << nearKey.publicKey.to_hex() << endl;
   // TODO: Recover
-
-  //
-  // // extended private key
-  // std::cout << ethereumKey.extPrivateKey.toString() << std::endl;
-  //
-  // // private key
-  // std::cout << ethereumKey.privateKey.toString() << std::endl;
-  //
-  // // extended public key
-  // std::cout << ethereumKey.extPublicKey.toString() << std::endl;
-  //
-  // // public key
-  // std::cout << ethereumKey.publicKey.toString() << std::endl;
-
-  // et cetera..
-
-  // the end.
+  */
   return 0;
 }
 

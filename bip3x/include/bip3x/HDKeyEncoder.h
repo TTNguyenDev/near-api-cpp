@@ -1,6 +1,6 @@
-/*! 
+/*!
  * bip39. 2018
- * 
+ *
  * \author Eduard Maximovich <edward.vstock@gmail.com>
  * \link https://github.com/edwardstock
  */
@@ -84,6 +84,9 @@ public:
     static HDKey makeBip32RootKey(const bytes_64& seed, BTCNetwork net = bip3x::MainNet);
     static void makeExtendedKey(HDKey& rootKey, const Derivation& derivation);
     static void derivePath(HDKey& key, const std::string& path, bool priv = true);
+    static HDKey ed25519FromSeed(const bip3x::bytes_data& seed);
+    static void nearDerivePath(HDKey& key);
+
 private:
     static void derive(HDKey& key, uint32_t index);
     static HDKey fromSeed(const bytes_data& seed);
@@ -94,6 +97,6 @@ private:
     static void fillPublicKey(HDKey& key);
     static void serialize(HDKey& key, uint32_t fingerprint, uint32_t version, bool publicKey = false);
 };
-} // namespace minter
+} // namespace bip3x
 
-#endif //BIP39_KEY_ENCODER_H
+#endif // BIP39_KEY_ENCODER_H

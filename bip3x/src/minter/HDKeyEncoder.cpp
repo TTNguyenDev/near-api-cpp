@@ -1,6 +1,6 @@
-/*! 
+/*!
  * bip39. 2018
- * 
+ *
  * \author Eduard Maximovich <edward.vstock@gmail.com>
  * \link https://github.com/edwardstock
  */
@@ -10,6 +10,8 @@
 #include "bip3x/crypto/ripemd160.h"
 #include "bip3x/uint256_t.hpp"
 
+#include <iostream>
+#include <istream>
 #include <toolbox/data/bytes_data.h>
 #include <toolbox/strings.hpp>
 
@@ -50,15 +52,20 @@ void bip3x::HDKeyEncoder::makeExtendedKey(bip3x::HDKey& rootKey, const Derivatio
     fillPublicKey(rootKey);
 }
 
+void print(std::string mess) {
+    std::cout << mess << std::endl;
+}
+
 void bip3x::HDKeyEncoder::derive(bip3x::HDKey& key, uint32_t index) {
     CONFIDENTIAL bytes_data buff(37);
     CONFIDENTIAL uint256_t a, b;
     CONFIDENTIAL bytes_64 I;
 
     // fetching parent fingerprint
-    key.fingerprint = fetchFingerprint(key);
+    // key.fingerprint = fetchFingerprint(key);
 
     if (index & 0x80000000) { // private derivation
+        print("HERE");
         buff.write(0, (uint8_t) 0x00);
         buff.write(1, key.privateKey.cdata(), 32);
     } else { // public derivation
@@ -72,36 +79,10 @@ void bip3x::HDKeyEncoder::derive(bip3x::HDKey& key, uint32_t index) {
 
     a = key.privateKey;
 
+    //hmac =))
     CONFIDENTIAL hmac_sha512(key.chainCode.cdata(), 32, buff.cdata(), buff.size(), I.data());
-
-    if (key.curve->params) {
-        while (true) {
-            bool failed = false;
-            bn_read_be(I.cdata(), &b.val());
-
-            if (!bn_is_less(&b.val(), &key.curve->params->order)) {
-                failed = true;
-            } else {
-                bn_add(&b.val(), &a.val());
-                bn_mod(&b.val(), &key.curve->params->order);
-                if (b == 0) {
-                    failed = true;
-                }
-            }
-
-            if (!failed) {
-                bn_write_be(&b.val(), key.privateKey.data());
-                break;
-            }
-
-            buff.write(0, (uint8_t) 1);
-            buff.write(1, I.take_last(32));
-            hmac_sha512(key.chainCode.cdata(), 32, buff.cdata(), buff.size(), I.data());
-        }
-    } else {
-        key.privateKey = I.take_first(32);
-    }
-
+    print(buff.to_hex());
+    key.privateKey = I.take_first(32);
     key.chainCode = I.take_last(32);
     key.depth++;
     key.index = index;
@@ -145,7 +126,51 @@ void bip3x::HDKeyEncoder::derivePath(HDKey& key, const std::string& path, bool p
                 derive(key, index);
             } else {
                 //@TODO
-//                hdnode_public_ckd(node, index);
+                //                hdnode_public_ckd(node, index);
+            }
+        }
+    }
+}
+
+void bip3x::HDKeyEncoder::nearDerivePath(HDKey& key) {
+    std::vector<std::string> pathBits = toolbox::strings::split("m/44'/397'/0'", "/");
+    for (const auto& bit : pathBits) {
+        if (bit == "m" || bit == "'") {
+            continue;
+        }
+        std::cout << "segments: " << bit << std::endl;
+
+        bool hardened = bit.length() > 1 && bit[bit.length() - 1] == '\'';
+        std::cout << hardened << std::endl;
+        uint32_t index;
+        if (hardened) {
+            const std::string tmp(bit.begin(), bit.end() - 1);
+            index = str_to_uint32_t(tmp);
+
+        } else {
+            index = str_to_uint32_t(bit);
+        }
+
+        std::cout << "INDEX: " << index + 0x80000000 << std::endl;
+
+        bool isPrivateKey = true;
+        bool invalidDerivationPath = hardened && !isPrivateKey;
+
+        if (invalidDerivationPath) {
+            return;
+        }
+
+        if (hardened) {
+            std::cout << key.privateKey.to_hex() << std::endl;
+            // index += 0x80000000;
+            derive(key, index + 0x80000000);
+        } else {
+            print("HELLO");
+            if (isPrivateKey) {
+                derive(key, index);
+            } else {
+                //@TODO
+                //                hdnode_public_ckd(node, index);
             }
         }
     }
@@ -196,9 +221,9 @@ void bip3x::HDKeyEncoder::serialize(bip3x::HDKey& key, uint32_t fingerprint, uin
     outKey->clear();
 
     base58_encode_check(
-        data.cdata(), static_cast<int>(data.size()), // input
-        key.curve->hasher_base58, // hasher
-        reinterpret_cast<char *>(outKey->data()), static_cast<int>(outKey->size()) // output
+        data.cdata(), static_cast<int>(data.size()),                              // input
+        key.curve->hasher_base58,                                                 // hasher
+        reinterpret_cast<char*>(outKey->data()), static_cast<int>(outKey->size()) // output
     );
 
     data.clear();
@@ -244,6 +269,38 @@ bip3x::HDKey bip3x::HDKeyEncoder::fromSeed(const bip3x::bytes_data& seed) {
     return out;
 }
 
+bip3x::HDKey bip3x::HDKeyEncoder::ed25519FromSeed(const bip3x::bytes_data& seed) {
+    HDKey out;
+    bytes_64 I;
+    out.depth = 0;
+    out.index = 0;
+    if (out.curve == nullptr) {
+        return out; // @TODO error handling
+    }
+
+    I = seed.switch_map_c(to_hmac_sha512("ed25519 seed"));
+
+    if (out.curve->params) {
+        uint256_t a;
+        while (true) {
+            a = I;
+
+            if (a != 0 && a < out.curve->params->order) {
+                break;
+            }
+
+            I.switch_map(to_hmac_sha512(out.curve->bip32_name));
+        }
+        a.clear();
+    }
+
+    out.privateKey = I.take_first(32);
+    out.chainCode = I.take_last(32);
+    out.publicKey.clear();
+    I.clear();
+
+    return out;
+}
 bip3x::HDKey::HDKey()
     : publicKey(),
       privateKey(),
@@ -254,7 +311,8 @@ bip3x::HDKey::HDKey()
       depth(0),
       index(0),
       fingerprint(0),
-      curve(&secp256k1_info) { }
+      curve(&secp256k1_info) {
+}
 
 bip3x::HDKey::HDKey(const bip3x::HDKey& other)
     : publicKey(other.publicKey),
@@ -267,7 +325,6 @@ bip3x::HDKey::HDKey(const bip3x::HDKey& other)
       index(other.index),
       fingerprint(other.fingerprint),
       curve(&secp256k1_info) {
-
 }
 
 bip3x::HDKey::HDKey(bip3x::HDKey&& other) noexcept
@@ -281,7 +338,6 @@ bip3x::HDKey::HDKey(bip3x::HDKey&& other) noexcept
       index(other.index),
       fingerprint(other.fingerprint),
       curve(&secp256k1_info) {
-
 }
 
 bip3x::HDKey& bip3x::HDKey::operator=(bip3x::HDKey other) {
