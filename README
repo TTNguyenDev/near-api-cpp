@@ -1,6 +1,4 @@
 # COMPILE AND RUN
 ```
-cmake -S . -B build -DENABLE_CONAN=Off 
-cd build && make
-g++ -std=c++17 -o main -lcpr main.cpp
+. ./script.sh
 ```
