@@ -26,12 +26,12 @@ int main(int argc, char **argv) {
 
   // create root key from mnemonic seed
   HDKey master_key = HDKeyEncoder::ed25519FromSeed(seed);
-  cout << "Root key: " << master_key.privateKey.to_hex() << endl;
-  cout << "CHAIN CODE: " << master_key.chainCode.to_hex() << endl;
+  // cout << "Root key: " << master_key.privateKey.to_hex() << endl;
+  // cout << "CHAIN CODE: " << master_key.chainCode.to_hex() << endl;
   
   // HDKeyEncoder::makeExtendedKey(master_key, "m/44'/397'/0'");
   HDKeyEncoder::nearDerivePath(master_key);
-  cout << "derivePath: " << master_key.chainCode.to_hex() << endl;
+  cout << "derivePath: " << master_key.privateKey.to_hex() << endl;
   /*
   // and, finally derive keys
   // copy key to leave root key

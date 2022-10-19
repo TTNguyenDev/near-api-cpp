@@ -61,28 +61,21 @@ void bip3x::HDKeyEncoder::derive(bip3x::HDKey& key, uint32_t index) {
     CONFIDENTIAL uint256_t a, b;
     CONFIDENTIAL bytes_64 I;
 
-    // fetching parent fingerprint
-    // key.fingerprint = fetchFingerprint(key);
-
-    if (index & 0x80000000) { // private derivation
-        print("HERE");
-        buff.write(0, (uint8_t) 0x00);
-        buff.write(1, key.privateKey.cdata(), 32);
-    } else { // public derivation
-        if (!key.curve->params) {
-            return;
-        }
-        fillPublicKey(key);
-        buff.write(0, key.publicKey.cdata(), 33);
-    }
+    buff.write(0, (uint8_t) 0x00);
+    buff.write(1, key.privateKey.cdata(), 32);
     buff.write(33, index);
 
     a = key.privateKey;
 
-    //hmac =))
+    // hmac =))
     CONFIDENTIAL hmac_sha512(key.chainCode.cdata(), 32, buff.cdata(), buff.size(), I.data());
+    print("DATA");
     print(buff.to_hex());
+    print("chainCode");
+    print(key.chainCode.to_hex());
     key.privateKey = I.take_first(32);
+    print("PRIVATE KEY AFTER hmac_sha512");
+    print(key.privateKey.to_hex());
     key.chainCode = I.take_last(32);
     key.depth++;
     key.index = index;
@@ -165,7 +158,6 @@ void bip3x::HDKeyEncoder::nearDerivePath(HDKey& key) {
             // index += 0x80000000;
             derive(key, index + 0x80000000);
         } else {
-            print("HELLO");
             if (isPrivateKey) {
                 derive(key, index);
             } else {
