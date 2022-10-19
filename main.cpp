@@ -1,10 +1,10 @@
 #include <bip3x/Bip39Mnemonic.h>
 #include <bip3x/HDKeyEncoder.h>
 #include <bip3x/utils.h>
+#include <tweetnacl.h>
 #include <iostream>
 #include <string.h>
 #include <vector>
-
 #include <cstring>
 
 using namespace bip3x;
@@ -20,7 +20,7 @@ void keypair_from_seed(const unsigned char *seed) {
   for (int i = 0; i < 32; i++) {
     sk[i] = (std::byte)seed[i];
   }
-  crypto_sign_keypair(pk, sk);
+  crypto_sign_keypair((unsigned char*)&pk, (unsigned char*)&sk);
   // Return pk, sk in hex
 }
 
