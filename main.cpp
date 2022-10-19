@@ -25,9 +25,6 @@ void keypair_from_seed(const unsigned char *seed) {
 }
 
 int main(int argc, char **argv) {
-  // create random words
-  // Bip39Mnemonic::MnemonicResult encodedMnemonic = Bip39Mnemonic::generate();
-  // std::cout << encodedMnemonic.words << std::endl;
   vector<std::string> words = {"despair", "kind",     "grab",     "chicken",
                                "arena",   "marine",   "pair",     "shed",
                                "hobby",   "original", "elephant", "region"};
@@ -37,31 +34,11 @@ int main(int argc, char **argv) {
 
   // create root key from mnemonic seed
   HDKey master_key = HDKeyEncoder::ed25519FromSeed(seed);
-  // cout << "Root key: " << master_key.privateKey.to_hex() << endl;
-  // cout << "CHAIN CODE: " << master_key.chainCode.to_hex() << endl;
 
-  // HDKeyEncoder::makeExtendedKey(master_key, "m/44'/397'/0'");
   HDKeyEncoder::nearDerivePath(master_key);
   cout << "derivePath: " << master_key.privateKey.to_hex() << endl;
 
   keypair_from_seed(master_key.privateKey.cdata());
-  /*
-  // and, finally derive keys
-  // copy key to leave root key
-  HDKey nearKey = bip32RootKey;
-
-  std::cout << "Before" << endl << nearKey.privateKey.to_hex() << endl;
-  std::cout << nearKey.publicKey.to_hex() << endl;
-  // // makeExtendedKey modifies source key
-
-  // HDKeyEncoder::makeExtendedKey(nearKey, "m/44'/397'/0'");
-
-  // TODO: get secretKey
-
-  std::cout << "After" << endl << nearKey.privateKey.to_hex() << endl;
-  std::cout << nearKey.publicKey.to_hex() << endl;
-  // TODO: Recover
-  */
   return 0;
 }
 
