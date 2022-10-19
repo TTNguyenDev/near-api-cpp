@@ -13,6 +13,17 @@ using namespace std;
 // Indexer
 #define INDEXER_SERVICE_URL "https://testnet-api.kitwallet.app"
 
+void keypair_from_seed(const unsigned char *seed) {
+  byte pk[64];
+  byte sk[32];
+
+  for (int i = 0; i < 32; i++) {
+    sk[i] = (std::byte)seed[i];
+  }
+  crypto_sign_keypair(pk, sk);
+  // Return pk, sk in hex
+}
+
 int main(int argc, char **argv) {
   // create random words
   // Bip39Mnemonic::MnemonicResult encodedMnemonic = Bip39Mnemonic::generate();
@@ -22,16 +33,18 @@ int main(int argc, char **argv) {
                                "hobby",   "original", "elephant", "region"};
   // create mnemonic seed
   bytes_64 seed = HDKeyEncoder::makeBip39Seed(words);
-  cout << "SEED: " <<seed.to_hex() << endl;
+  cout << "SEED: " << seed.to_hex() << endl;
 
   // create root key from mnemonic seed
   HDKey master_key = HDKeyEncoder::ed25519FromSeed(seed);
   // cout << "Root key: " << master_key.privateKey.to_hex() << endl;
   // cout << "CHAIN CODE: " << master_key.chainCode.to_hex() << endl;
-  
+
   // HDKeyEncoder::makeExtendedKey(master_key, "m/44'/397'/0'");
   HDKeyEncoder::nearDerivePath(master_key);
   cout << "derivePath: " << master_key.privateKey.to_hex() << endl;
+
+  keypair_from_seed(master_key.privateKey.cdata());
   /*
   // and, finally derive keys
   // copy key to leave root key
@@ -78,3 +91,4 @@ int main(int argc, char **argv) {
 //
 //      return isValidSeedPhrase;
 //  };
+//
