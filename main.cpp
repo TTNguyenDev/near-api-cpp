@@ -7,8 +7,6 @@
 #include <vector>
 
 #include "ed25519/ed25519.h"
-#include "ed25519/ge.h"
-#include "ed25519/sc.h"
 
 using namespace bip3x;
 using namespace std;

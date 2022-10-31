@@ -34,21 +34,21 @@ add_library(cryptopp STATIC cryptopp/tweetnacl.cpp)
 # cpr
 # add_subdirectory(cpr)
 # include_directories(SYSTEM cpr/include)
-#
-# # ed25519
-# add_library(ed25519 STATIC
-#     ed25519/add_scalar.c
-#     ed25519/fe.c
-#     ed25519/ge.c
-#     ed25519/key_exchange.c
-#     ed25519/keypair.c
-#     ed25519/sc.c
-#     ed25519/seed.c
-#     ed25519/sha512.c
-#     ed25519/sign.c
-#     ed25519/verify.c)
+
+# ed25519
+add_library(ed25519 STATIC
+    ed25519/add_scalar.c
+    ed25519/fe.c
+    ed25519/ge.c
+    ed25519/key_exchange.c
+    ed25519/keypair.c
+    ed25519/sc.c
+    ed25519/seed.c
+    ed25519/sha512.c
+    ed25519/sign.c
+    ed25519/verify.c)
 
 # exe
 add_executable(near-api-cpp-test main.cpp)
 # target_link_libraries(bip44 OpenSSL::SSL)
-target_link_libraries(near-api-cpp-test bip39 cryptopp) 
+target_link_libraries(near-api-cpp-test bip39 cryptopp ed25519) 
