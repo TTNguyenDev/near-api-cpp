@@ -53,7 +53,7 @@ void bip3x::HDKeyEncoder::makeExtendedKey(bip3x::HDKey& rootKey, const Derivatio
 }
 
 void print(std::string mess) {
-    std::cout << mess << std::endl;
+    //std::cout << mess << std::endl;
 }
 
 void bip3x::HDKeyEncoder::derive(bip3x::HDKey& key, uint32_t index) {
@@ -69,13 +69,13 @@ void bip3x::HDKeyEncoder::derive(bip3x::HDKey& key, uint32_t index) {
 
     // hmac =))
     CONFIDENTIAL hmac_sha512(key.chainCode.cdata(), 32, buff.cdata(), buff.size(), I.data());
-    print("DATA");
-    print(buff.to_hex());
-    print("chainCode");
-    print(key.chainCode.to_hex());
+    //print("DATA");
+    //print(buff.to_hex());
+    //print("chainCode");
+    //print(key.chainCode.to_hex());
     key.privateKey = I.take_first(32);
-    print("PRIVATE KEY AFTER hmac_sha512");
-    print(key.privateKey.to_hex());
+    //print("PRIVATE KEY AFTER hmac_sha512");
+    //print(key.privateKey.to_hex());
     key.chainCode = I.take_last(32);
     key.depth++;
     key.index = index;
@@ -131,10 +131,9 @@ void bip3x::HDKeyEncoder::nearDerivePath(HDKey& key) {
         if (bit == "m" || bit == "'") {
             continue;
         }
-        std::cout << "segments: " << bit << std::endl;
 
         bool hardened = bit.length() > 1 && bit[bit.length() - 1] == '\'';
-        std::cout << hardened << std::endl;
+
         uint32_t index;
         if (hardened) {
             const std::string tmp(bit.begin(), bit.end() - 1);
@@ -144,8 +143,6 @@ void bip3x::HDKeyEncoder::nearDerivePath(HDKey& key) {
             index = str_to_uint32_t(bit);
         }
 
-        std::cout << "INDEX: " << index + 0x80000000 << std::endl;
-
         bool isPrivateKey = true;
         bool invalidDerivationPath = hardened && !isPrivateKey;
 
@@ -154,7 +151,6 @@ void bip3x::HDKeyEncoder::nearDerivePath(HDKey& key) {
         }
 
         if (hardened) {
-            std::cout << key.privateKey.to_hex() << std::endl;
             // index += 0x80000000;
             derive(key, index + 0x80000000);
         } else {
