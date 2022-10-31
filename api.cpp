@@ -1,7 +1,13 @@
 #include "api.h"
+#include "api.h"
+#include "api.h"
+#include "picojson.h"
 
 #include <ed25519.h>
 #include <bip3x/HDKeyEncoder.h>
+#include <cpr/cpr.h>
+
+#include <iostream>
 
 inline static constexpr const uint8_t Base58Map[] = {
     '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F',
@@ -101,7 +107,7 @@ std::vector<uint8_t> Base58Decode(const std::string& data, CodecMapping mapping)
 
 namespace NearCpp
 {
-    void KeysFromSeedPhrase(std::vector<std::string> Seed, std::string& PublicKey, std::string& PrivateKey)
+    Client::Client(std::vector<std::string> Seed)
     {
         // create mnemonic seed
         bip3x::bytes_64 seed = bip3x::HDKeyEncoder::makeBip39Seed(Seed);
@@ -129,5 +135,39 @@ namespace NearCpp
 
         PublicKey = Base58Encode(base58_pub, mapping);
         PrivateKey = Base58Encode(base58_priv, mapping);
+    }
+
+    bool Client::GetAccounts(std::vector<std::string>& Accounts)
+    {
+        Accounts.clear();
+
+        std::ostringstream ss;
+        ss << Url << "/publicKey/ed25519:" << PublicKey << "/accounts";
+
+        cpr::Response r = cpr::Get(cpr::Url { ss.str() });
+
+        if (r.error)
+        {
+            LastError = r.error.message;
+            return false;
+        }
+
+        picojson::value v;
+        std::string err = picojson::parse(v, r.text);
+
+        if (!err.empty())
+        {
+            LastError = err;
+            return false;
+        }
+
+        picojson::array accs = v.get<picojson::array>();
+
+        for (const picojson::value& acc : accs)
+        {
+            Accounts.push_back(acc.get<std::string>());
+        }
+
+        return cpr::status::is_success(r.status_code);
     }
 }

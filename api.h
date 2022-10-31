@@ -14,7 +14,27 @@
 
 namespace NearCpp
 {
-    void NEAR_API KeysFromSeedPhrase(std::vector<std::string> Seed, std::string& PublicKey, std::string& PrivateKey);
+    class NEAR_API Client
+    {
+    public:
+        Client(std::string publicKey) : PublicKey(publicKey) {};
+        Client(std::string publicKey, std::string privateKey) : PublicKey(publicKey), PrivateKey(privateKey) {}
+        Client(std::vector<std::string> Seed);
+
+        void SetUrl(std::string url) { Url = url; }
+
+        std::string GetPublicKey() const { return PublicKey; }
+        std::string GetPrivateKey() const { return PrivateKey; }
+        std::string GetLastError() const { return LastError; }
+
+        bool GetAccounts(std::vector<std::string>& Accounts);
+
+    private:
+        std::string PublicKey;
+        std::string PrivateKey;
+        std::string Url;
+        std::string LastError;
+    };
 }
 
 #endif

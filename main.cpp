@@ -4,24 +4,43 @@
 #include <string>
 #include <iostream>
 
+#define INDEXER_SERVICE_URL "https://testnet-api.kitwallet.app"
+
 int main(int argc, char** argv)
 {
     std::vector<std::string> words = { "despair", "kind",     "grab",     "chicken",
                                        "arena",   "marine",   "pair",     "shed",
                                        "hobby",   "original", "elephant", "region" };
     
-    std::string PublicKey, PrivateKey;
+    NearCpp::Client Client(words);
 
-    NearCpp::KeysFromSeedPhrase(words, PublicKey, PrivateKey);
+    std::cout << "Near public key: " << Client.GetPublicKey() << " (" << Client.GetPublicKey().length() << ")\n";
+    std::cout << "Near private key: " << Client.GetPrivateKey() << " (" << Client.GetPrivateKey().length() << ")\n\n";
 
-    std::cout << "Near public key: " << PublicKey << " (" << PublicKey.length() << ")" << std::endl;
-    std::cout << "Near private key: " << PrivateKey << " (" << PrivateKey.length() << ")" << std::endl;
+    Client.SetUrl(INDEXER_SERVICE_URL);
+
+    std::vector<std::string> Accounts;
+
+    if (Client.GetAccounts(Accounts))
+    {
+        std::cout << "Accounts (" << Accounts.size() << "): ";
+        
+        for (int i = 0; i < Accounts.size(); ++i)
+        {
+            std::cout << Accounts[i];
+
+            if (i < Accounts.size() - 1)
+            {
+                std::cout << ", ";
+            }
+        }
+
+        std::cout << std::endl;
+    }
+    else
+    {
+        std::cout << "Error fetching accounts: " << Client.GetLastError() << std::endl;
+    }
 
     return 0;
 }
-
-std::string getAccountByPublicKey(std::string publicKey) {
-    //std::string url = INDEXER_SERVICE_URL + std::string("/publicKey") + publicKey + std::string("/accounts");
-    return "";
-}
-
