@@ -1,11 +1,14 @@
 #include <bip3x/Bip39Mnemonic.h>
 #include <bip3x/HDKeyEncoder.h>
 #include <bip3x/utils.h>
-#include <tweetnacl.h>
+#include <cstring>
 #include <iostream>
 #include <string.h>
 #include <vector>
-#include <cstring>
+
+#include "ed25519/ed25519.h"
+#include "ed25519/ge.h"
+#include "ed25519/sc.h"
 
 using namespace bip3x;
 using namespace std;
@@ -20,7 +23,7 @@ void keypair_from_seed(const unsigned char *seed) {
   for (int i = 0; i < 32; i++) {
     sk[i] = (std::byte)seed[i];
   }
-  crypto_sign_keypair((unsigned char*)&pk, (unsigned char*)&sk);
+  // crypto_sign_keypair((unsigned char*)&pk, (unsigned char*)&sk);
   // Return pk, sk in hex
 }
 
@@ -37,8 +40,11 @@ int main(int argc, char **argv) {
 
   HDKeyEncoder::nearDerivePath(master_key);
   cout << "derivePath: " << master_key.privateKey.to_hex() << endl;
+  unsigned char public_key[32], private_key[64], ed25519_seed[32];
 
-  keypair_from_seed(master_key.privateKey.cdata());
+  /* create a random seed, and a keypair out of that seed */
+  ed25519_create_seed(ed25519_seed);
+  ed25519_create_keypair(public_key, private_key, ed25519_seed);
   return 0;
 }
 
