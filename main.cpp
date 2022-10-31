@@ -40,9 +40,17 @@ int main(int argc, char **argv) {
   cout << "derivePath: " << master_key.privateKey.to_hex() << endl;
   unsigned char public_key[32], private_key[64], ed25519_seed[32];
 
-  /* create a random seed, and a keypair out of that seed */
-  ed25519_create_seed(ed25519_seed);
-  ed25519_create_keypair(public_key, private_key, ed25519_seed);
+  for (int i = 0; i < 32; i++)
+    private_key[i] = master_key.privateKey.cdata()[i];
+
+  ed25519_create_keypair(public_key, private_key,
+                         master_key.privateKey.cdata());
+
+  cout << "ed25519 private_key: " << endl;
+
+  for (int i = 0; i < 64; i++)
+    printf("%02hhx", private_key[i]);
+  // cout << "ed25519: " << private_key << endl;
   return 0;
 }
 
