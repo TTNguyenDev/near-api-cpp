@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 project(near-api-cpp)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 # bip3x
 add_subdirectory(thirdparty/bip3x)
@@ -29,7 +29,7 @@ add_library(
 include_directories(SYSTEM thirdparty/ed25519)
 
 # library
-add_library(near-api-cpp STATIC src/api.cpp)
+add_library(near-api-cpp STATIC src/api.cpp src/base58.cpp src/base64.cpp)
 target_link_libraries(near-api-cpp bip39 ed25519 cpr)
 
 # tests

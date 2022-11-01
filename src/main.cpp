@@ -50,7 +50,7 @@ int main(int argc, char** argv)
     {
         std::string result;
 
-        if (Client.Query("dev-1641440672601-60716758911821", "tokens_metadata_of_owner", "", result))
+        if (Client.Query("dev-1641440672601-60716758911821", "tokens_metadata_of_owner", "{ \"owner_id\": \"matty.testnet\"}", result))
         {
             std::cout << "Result: " << result << std::endl;
         }
