@@ -1,13 +1,12 @@
 #include "api.h"
 #include "api.h"
 #include "api.h"
-#include "picojson.h"
+
+#ifndef NDEBUG
+#include <iostream>
+#endif
 
 #include <ed25519.h>
-#include <bip3x/HDKeyEncoder.h>
-#include <cpr/cpr.h>
-
-#include <iostream>
 
 inline static constexpr const uint8_t Base58Map[] = {
     '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F',
@@ -107,10 +106,10 @@ std::vector<uint8_t> Base58Decode(const std::string& data, CodecMapping mapping)
 
 namespace NearCpp
 {
-    Client::Client(std::vector<std::string> Seed)
+    Client::Client(std::vector<std::string> seedWords)
     {
         // create mnemonic seed
-        bip3x::bytes_64 seed = bip3x::HDKeyEncoder::makeBip39Seed(Seed);
+        bip3x::bytes_64 seed = bip3x::HDKeyEncoder::makeBip39Seed(seedWords);
 
         // create root key from mnemonic seed
         bip3x::HDKey master_key = bip3x::HDKeyEncoder::ed25519FromSeed(seed);
@@ -137,14 +136,76 @@ namespace NearCpp
         PrivateKey = Base58Encode(base58_priv, mapping);
     }
 
-    bool Client::GetAccounts(std::vector<std::string>& Accounts)
+    bool Client::GetAccounts(std::vector<std::string>& Accounts) const
     {
         Accounts.clear();
 
         std::ostringstream ss;
-        ss << Url << "/publicKey/ed25519:" << PublicKey << "/accounts";
+        ss << IndexerUrl << "/publicKey/ed25519:" << PublicKey << "/accounts";
 
         cpr::Response r = cpr::Get(cpr::Url { ss.str() });
+
+        return ParseIndexerResponse(r, [&Accounts](picojson::value v) {
+            picojson::array accs = v.get<picojson::array>();
+
+            for (const picojson::value& acc : accs)
+            {
+                Accounts.push_back(acc.get<std::string>());
+            }
+
+            return true;
+        });
+    }
+
+    bool Client::Query(std::string contractId, std::string method, std::string argsBase64, std::string& outResult) const
+    {
+        picojson::object obj;
+        obj["jsonrpc"] = picojson::value("2.0");
+        obj["id"] = picojson::value("dontcare");
+        obj["method"] = picojson::value("query");
+
+        picojson::object params;
+        params["request_type"] = picojson::value("call_function");
+        params["finality"] = picojson::value("final");
+        params["account_id"] = picojson::value(contractId);
+        params["method_name"] = picojson::value(method);
+        params["args_base64"] = picojson::value(argsBase64);
+
+        obj["params"] = picojson::value(params);
+
+        picojson::value payload(obj);
+
+        cpr::Response r = cpr::Post(cpr::Url { RpcUrl },
+            cpr::Body { payload.serialize() },
+            cpr::Header {{ "Content-Type", "application/json" }});
+
+#ifndef NDEBUG
+        std::cout << "Payload:" << std::endl;
+        std::cout << payload.serialize(true) << std::endl << std::endl;
+#endif
+
+        return ParseRPCResponse(r, [&outResult](picojson::value v) {
+            picojson::array result = v.get<picojson::object>()["result"].get<picojson::array>();
+
+            std::vector<char> buffer;
+
+            for (const picojson::value value : result)
+            {
+                buffer.push_back(static_cast<uint8_t>(value.get<double>()));
+            }
+
+            outResult = buffer.data();
+
+            return true;
+        });
+    }
+
+    bool Client::ParseResponse(const cpr::Response& r, std::function<bool(picojson::value)> func) const
+    {
+#ifndef NDEBUG
+        std::cout << "Response:" << std::endl;
+        std::cout << r.text << std::endl << std::endl;
+#endif
 
         if (r.error)
         {
@@ -161,13 +222,23 @@ namespace NearCpp
             return false;
         }
 
-        picojson::array accs = v.get<picojson::array>();
-
-        for (const picojson::value& acc : accs)
+        if (cpr::status::is_success(r.status_code))
         {
-            Accounts.push_back(acc.get<std::string>());
+            return func(v);
         }
 
-        return cpr::status::is_success(r.status_code);
+        return false;
+    }
+
+    bool Client::ParseIndexerResponse(const cpr::Response& r, std::function<bool(picojson::value)> func) const
+    {
+        return ParseResponse(r, func);
+    }
+
+    bool Client::ParseRPCResponse(const cpr::Response& r, std::function<bool(picojson::value)> func) const
+    {
+        return ParseResponse(r, [&func](picojson::value v) {
+            return func(v.get<picojson::object>()["result"]);
+        });
     }
 }

@@ -4,9 +4,6 @@ project(near-api-cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# openssl set(OPENSSL_USE_STATIC_LIBS TRUE) find_package(OpenSSL REQUIRED)
-# include_directories(${OPENSSL_INCLUDE_DIR})
-
 # bip3x
 add_subdirectory(bip3x)
 include_directories(SYSTEM bip3x/include)
