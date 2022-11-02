@@ -141,6 +141,12 @@ namespace NearCpp
 
     std::optional<picojson::value> ParseResponse(const cpr::Response& r, std::string& error)
     {
+        if (r.url.str().empty())
+        {
+            error = "No url";
+            return std::nullopt;
+        }
+
 #ifndef NDEBUG
         if (!r.text.empty())
         {

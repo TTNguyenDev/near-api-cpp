@@ -1,5 +1,5 @@
 {
-    "cmake.configureArgs": [ "-DBUILD_SHARED_LIBS=OFF" ],
+    "cmake.configureArgs": [ "-DENABLE_CONAN=OFF", "-DBUILD_SHARED_LIBS=OFF" ],
     "files.associations": {
         "__bit_reference": "cpp",
         "__bits": "cpp",
