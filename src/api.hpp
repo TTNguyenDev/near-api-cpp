@@ -27,6 +27,9 @@ namespace NearCpp
     class NEAR_API Client
     {
     public:
+        template <typename T>
+        using Callback = std::function<void(bool, T, std::string err)>;
+
         Client(std::string publicKey) : PublicKey(publicKey) {};
         Client(std::string publicKey, std::string privateKey) : PublicKey(publicKey), PrivateKey(privateKey) {}
         Client(std::vector<std::string> seedWords);
@@ -41,25 +44,22 @@ namespace NearCpp
 
         std::string GetPublicKey() const { return PublicKey; }
         std::string GetPrivateKey() const { return PrivateKey; }
-        std::string GetLastError() const { return LastError; }
 
-        void GetAccounts(std::function<void(bool, std::vector<std::string>)> callback);
-        void Query(std::string contractId, std::string method, std::string args, std::function<void(bool, std::string)> callback);
+        void GetAccounts(Callback<std::vector<std::string>> callback);
+        void Query(std::string contractId, std::string method, std::string args, Callback<std::string> callback);
 
     private:
         std::string PublicKey;
         std::string PrivateKey;
         std::string IndexerUrl, RpcUrl;
 
-        mutable std::string LastError;
-
         std::mutex Mutex;
         std::condition_variable Cond;
         std::atomic<int> NumThreads = 0;
 
-        std::optional<picojson::value> ParseResponse(const cpr::Response& r) const;
-        std::optional<picojson::value> ParseIndexerResponse(const cpr::Response& r) const;
-        std::optional<picojson::value> ParseRPCResponse(const cpr::Response& r) const;
+        std::optional<picojson::value> ParseResponse(const cpr::Response& r, std::string& err) const;
+        std::optional<picojson::value> ParseIndexerResponse(const cpr::Response& r, std::string& err) const;
+        std::optional<picojson::value> ParseRPCResponse(const cpr::Response& r, std::string& err) const;
 
         template <typename T>
         void Launch(T&& f);

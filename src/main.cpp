@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 
     std::vector<std::string> Accounts;
 
-    Client.GetAccounts([&Client](bool success, std::vector<std::string> accounts) {
+    Client.GetAccounts([&](bool success, std::vector<std::string> accounts, std::string err) {
         if (success)
         {
             std::cout << "Accounts (" << accounts.size() << "): ";
@@ -42,24 +42,26 @@ int main(int argc, char** argv)
         }
         else
         {
-            std::cout << "Error fetching accounts: " << Client.GetLastError() << std::endl;
+            std::cout << "Error fetching accounts: " << err << std::endl;
         }
-    });
 
-    std::string result;
+        std::cout << std::endl;
 
-    Client.Query("dev-1641440672601-60716758911821",
-                 "tokens_metadata_of_owner",
-                 "{ \"owner_id\": \"matty.testnet\"}",
-                 [&Client](bool success, std::string result) {
-        if (success)
-        {
-            std::cout << "Result: " << result << std::endl;
-        }
-        else
-        {
-            std::cout << "Error querying: " << Client.GetLastError() << std::endl;
-        }
+        std::string result;
+
+        Client.Query("dev-1641440672601-60716758911821",
+                     "tokens_metadata_of_owner",
+                     "{ \"owner_id\": \"matty.testnet\"}",
+                     [](bool success, std::string result, std::string err) {
+            if (success)
+            {
+                std::cout << "Result: " << result << std::endl;
+            }
+            else
+            {
+                std::cout << "Error querying: " << err << std::endl;
+            }
+        });
     });
 
     return 0;
