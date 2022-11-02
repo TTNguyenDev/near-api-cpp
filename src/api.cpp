@@ -2,6 +2,11 @@
 #include "base58.hpp"
 #include "base64.hpp"
 
+#include <bip3x/HDKeyEncoder.h>
+#include <cpr/cpr.h>
+
+#include "picojson.h"
+
 #include <ranges>
 
 #ifndef NDEBUG
@@ -12,6 +17,10 @@
 
 namespace NearCpp
 {
+    std::optional<picojson::value> ParseResponse(const cpr::Response& r, std::string& error);
+    std::optional<picojson::value> ParseIndexerResponse(const cpr::Response& r, std::string& err);
+    std::optional<picojson::value> ParseRPCResponse(const cpr::Response& r, std::string& err);
+
     Client::Client(std::vector<std::string> seedWords)
     {
         // create mnemonic seed
@@ -130,7 +139,7 @@ namespace NearCpp
         });
     }
 
-    std::optional<picojson::value> Client::ParseResponse(const cpr::Response& r, std::string& error) const
+    std::optional<picojson::value> ParseResponse(const cpr::Response& r, std::string& error)
     {
 #ifndef NDEBUG
         if (!r.text.empty())
@@ -165,12 +174,12 @@ namespace NearCpp
         return std::nullopt;
     }
 
-    std::optional<picojson::value> Client::ParseIndexerResponse(const cpr::Response& r, std::string& err) const
+    std::optional<picojson::value> ParseIndexerResponse(const cpr::Response& r, std::string& err)
     {
         return ParseResponse(r, err);
     }
 
-    std::optional<picojson::value> Client::ParseRPCResponse(const cpr::Response& r, std::string& err) const
+    std::optional<picojson::value> ParseRPCResponse(const cpr::Response& r, std::string& err)
     {
         auto response = ParseResponse(r, err);
         return response.has_value() ? response.value().get<picojson::object>()["result"] : response;

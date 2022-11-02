@@ -9,11 +9,6 @@
 #include <functional>
 #include <condition_variable>
 
-#include <bip3x/HDKeyEncoder.h>
-#include <cpr/cpr.h>
-
-#include "picojson.h"
-
 #ifdef NEAR_API_CPP_BUILD_DLL
     #define NEAR_API __declspec(dllexport)
 #elif defined(NEAR_API_CPP_DLL)
@@ -56,10 +51,6 @@ namespace NearCpp
         std::mutex Mutex;
         std::condition_variable Cond;
         std::atomic<int> NumThreads = 0;
-
-        std::optional<picojson::value> ParseResponse(const cpr::Response& r, std::string& err) const;
-        std::optional<picojson::value> ParseIndexerResponse(const cpr::Response& r, std::string& err) const;
-        std::optional<picojson::value> ParseRPCResponse(const cpr::Response& r, std::string& err) const;
 
         template <typename T>
         void Launch(T&& f);

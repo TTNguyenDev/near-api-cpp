@@ -30,6 +30,8 @@ include_directories(SYSTEM thirdparty/ed25519)
 
 # library
 add_library(near-api-cpp STATIC src/api.cpp src/base58.cpp src/base64.cpp)
+
+target_sources(near-api-cpp PRIVATE src/api.hpp src/base58.hpp src/base64.hpp)
 target_link_libraries(near-api-cpp bip39 ed25519 cpr)
 
 # tests
