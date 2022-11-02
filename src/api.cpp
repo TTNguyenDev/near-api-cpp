@@ -42,28 +42,42 @@ namespace NearCpp
         PrivateKey = Base58Encode(base58_priv, mapping);
     }
 
-    bool Client::GetAccounts(std::vector<std::string>& Accounts) const
+    Client::~Client()
     {
-        Accounts.clear();
+        std::unique_lock<std::mutex> lock(Mutex);
+        Cond.wait(lock, [this]() { return NumThreads <= 0; });
+    }
 
+    void Client::GetAccounts(std::function<void(bool, std::vector<std::string>)> callback)
+    {
         std::ostringstream ss;
         ss << IndexerUrl << "/publicKey/ed25519:" << PublicKey << "/accounts";
 
-        cpr::Response r = cpr::Get(cpr::Url { ss.str() });
+        cpr::AsyncResponse r = cpr::GetAsync(cpr::Url { ss.str() });
 
-        return ParseIndexerResponse(r, [&Accounts](picojson::value v) {
-            picojson::array accs = v.get<picojson::array>();
+        Launch([this, r = std::move(r), callback]() mutable {
+            std::vector<std::string> accounts;
+            auto response = ParseIndexerResponse(r.get());
 
-            for (const picojson::value& acc : accs)
+            if (response.has_value())
             {
-                Accounts.push_back(acc.get<std::string>());
-            }
+                picojson::array accs = response.value().get<picojson::array>();
 
-            return true;
+                for (const picojson::value& acc : accs)
+                {
+                    accounts.push_back(acc.get<std::string>());
+                }
+
+                callback(true, accounts);
+            }
+            else
+            {
+                callback(false, accounts);
+            }
         });
     }
 
-    bool Client::Query(std::string contractId, std::string method, std::string args, std::string& outResult) const
+    void Client::Query(std::string contractId, std::string method, std::string args, std::function<void(bool, std::string)> callback)
     {
         picojson::object obj;
         obj["jsonrpc"] = picojson::value("2.0");
@@ -90,23 +104,30 @@ namespace NearCpp
         std::cout << payload.serialize(true) << std::endl << std::endl;
 #endif
 
-        return ParseRPCResponse(r, [&outResult](picojson::value v) {
-            picojson::array result = v.get<picojson::object>()["result"].get<picojson::array>();
+        Launch([this, r = std::move(r), callback]() mutable {
+            auto response = ParseRPCResponse(r);
 
-            std::vector<char> buffer;
-
-            for (const picojson::value value : result)
+            if (response.has_value())
             {
-                buffer.push_back(static_cast<uint8_t>(value.get<double>()));
+                picojson::array result = response.value().get<picojson::object>()["result"].get<picojson::array>();
+
+                std::vector<char> buffer;
+
+                for (const picojson::value value : result)
+                {
+                    buffer.push_back(static_cast<uint8_t>(value.get<double>()));
+                }
+
+                callback(true, buffer.data());
             }
-
-            outResult = buffer.data();
-
-            return true;
+            else
+            {
+                callback(false, "");
+            }
         });
     }
 
-    bool Client::ParseResponse(const cpr::Response& r, std::function<bool(picojson::value)> func) const
+    std::optional<picojson::value> Client::ParseResponse(const cpr::Response& r) const
     {
 #ifndef NDEBUG
         std::cout << "Response:" << std::endl;
@@ -116,7 +137,7 @@ namespace NearCpp
         if (r.error)
         {
             LastError = r.error.message;
-            return false;
+            return std::nullopt;
         }
 
         picojson::value v;
@@ -125,26 +146,40 @@ namespace NearCpp
         if (!err.empty())
         {
             LastError = err;
-            return false;
+            return std::nullopt;
         }
 
         if (cpr::status::is_success(r.status_code))
         {
-            return func(v);
+            return v;
         }
 
-        return false;
+        LastError = "HTTP error " + std::to_string(r.status_code);
+
+        return std::nullopt;
     }
 
-    bool Client::ParseIndexerResponse(const cpr::Response& r, std::function<bool(picojson::value)> func) const
+    std::optional<picojson::value> Client::ParseIndexerResponse(const cpr::Response& r) const
     {
-        return ParseResponse(r, func);
+        return ParseResponse(r);
     }
 
-    bool Client::ParseRPCResponse(const cpr::Response& r, std::function<bool(picojson::value)> func) const
+    std::optional<picojson::value> Client::ParseRPCResponse(const cpr::Response& r) const
     {
-        return ParseResponse(r, [&func](picojson::value v) {
-            return func(v.get<picojson::object>()["result"]);
-        });
+        auto response = ParseResponse(r);
+        return response.has_value() ? response.value().get<picojson::object>()["result"] : response;
+    }
+
+    template <typename T>
+    void Client::Launch(T&& f)
+    {
+        NumThreads++;
+
+        std::thread([this, f = std::move(f)]() mutable {
+            f();
+            std::lock_guard<std::mutex> lock(Mutex);
+            NumThreads--;
+            Cond.notify_all();
+        }).detach();
     }
 }

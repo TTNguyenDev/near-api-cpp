@@ -23,34 +23,36 @@ int main(int argc, char** argv)
 
     std::vector<std::string> Accounts;
 
-    if (Client.GetAccounts(Accounts))
-    {
-        std::cout << "Accounts (" << Accounts.size() << "): ";
-        
-        for (int i = 0; i < Accounts.size(); ++i)
+    Client.GetAccounts([&Client](bool success, std::vector<std::string> accounts) {
+        if (success)
         {
-            std::cout << Accounts[i];
+            std::cout << "Accounts (" << accounts.size() << "): ";
 
-            if (i < Accounts.size() - 1)
+            for (int i = 0; i < accounts.size(); ++i)
             {
-                std::cout << ", ";
+                std::cout << accounts[i];
+
+                if (i < accounts.size() - 1)
+                {
+                    std::cout << ", ";
+                }
             }
+
+            std::cout << std::endl;
         }
+        else
+        {
+            std::cout << "Error fetching accounts: " << Client.GetLastError() << std::endl;
+        }
+    });
 
-        std::cout << std::endl;
-    }
-    else
-    {
-        std::cout << "Error fetching accounts: " << Client.GetLastError() << std::endl;
-    }
+    std::string result;
 
-    std::cout << std::endl;
-
-    if (Accounts.size() > 0)
-    {
-        std::string result;
-
-        if (Client.Query("dev-1641440672601-60716758911821", "tokens_metadata_of_owner", "{ \"owner_id\": \"matty.testnet\"}", result))
+    Client.Query("dev-1641440672601-60716758911821",
+                 "tokens_metadata_of_owner",
+                 "{ \"owner_id\": \"matty.testnet\"}",
+                 [&Client](bool success, std::string result) {
+        if (success)
         {
             std::cout << "Result: " << result << std::endl;
         }
@@ -58,7 +60,7 @@ int main(int argc, char** argv)
         {
             std::cout << "Error querying: " << Client.GetLastError() << std::endl;
         }
-    }
+    });
 
     return 0;
 }
