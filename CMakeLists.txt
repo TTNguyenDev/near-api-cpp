@@ -4,6 +4,18 @@ project(near-api-cpp)
 
 set(CMAKE_CXX_STANDARD 20)
 
+set(Toolbox_DIR "build/thirdparty/toolbox")
+
+# toolbox
+add_subdirectory(thirdparty/toolbox)
+include_directories(SYSTEM thirdparty/toolbox/include)
+
+install(TARGETS toolbox EXPORT toolbox_alias LIBRARY DESTINATION toolboxlib/)
+export(TARGETS toolbox NAMESPACE toolbox_alias:: FILE ${CMAKE_BINARY_DIR}/toolbox/ToolboxConfig.cmake)
+
+add_library(toolbox_alias::toolbox ALIAS toolbox)
+file(WRITE ${CMAKE_BINARY_DIR}/toolbox/ToolboxConfig.cmake "")
+
 # bip3x
 add_subdirectory(thirdparty/bip3x)
 include_directories(SYSTEM thirdparty/bip3x/include)
