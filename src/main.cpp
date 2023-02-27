@@ -9,12 +9,15 @@
 
 std::string generate_signin_url(std::string contractId,
                                 std::string successUrl) {
-  NearCpp::Client Client;
+  NearCpp::Client* Client = NearCpp::Client::CreateNew();
 
-  std::cout << "Near public key: " << Client.GetPublicKey() << " ("
-            << Client.GetPublicKey().length() << ")\n";
+  std::cout << "Near public key: " << Client->GetPublicKey() << " ("
+            << Client->GetPublicKey().length() << ")\n";
 
-  std::string pubKey = Client.GetPublicKey();
+  std::string pubKey = Client->GetPublicKey();
+
+  delete Client;
+
   return "https://wallet.testnet.near.org/login/"
          "?success_url=" +
          successUrl + "&failure_url=" + successUrl +

@@ -26,38 +26,48 @@ std::optional<picojson::value> ParseIndexerResponse(const cpr::Response &r,
 std::optional<picojson::value> ParseRPCResponse(const cpr::Response &r,
                                                 std::string &err);
 
+Client* Client::CreateNew() {
+  return new Client();
+}
+
+Client* Client::CreateFromSeedWords(const std::vector<std::string>& seedWords) {
+  return new Client(seedWords);
+}
+
+Client* Client::CreateFromPrivateKey(std::string privateKey) {
+  CodecMapping mapping(AlphaMap, Base58Map);
+
+  std::vector<uint8_t> public_key(32);
+  std::vector<uint8_t> private_key = Base58Decode(privateKey, mapping);
+  
+  for (int i = 0; i < 32; ++i)
+    public_key[i] = private_key[i + 32];
+
+  return new Client(Base58Encode(public_key, mapping), privateKey);
+}
+
 Client::Client() {
   bip3x::Bip39Mnemonic::MnemonicResult encodedMnemonic =
       bip3x::Bip39Mnemonic::generate();
 
-  bip3x::bytes_64 seed =
-      bip3x::HDKeyEncoder::makeBip39Seed(encodedMnemonic.words);
+  bip3x::bytes_64 seed = bip3x::HDKeyEncoder::makeBip39Seed(encodedMnemonic.words);
 
   // create root key from mnemonic seed
   bip3x::HDKey master_key = bip3x::HDKeyEncoder::ed25519FromSeed(seed);
 
   bip3x::HDKeyEncoder::nearDerivePath(master_key);
-  unsigned char public_key[32], private_key[64];
+  std::vector<uint8_t> public_key(32), private_key(64);
 
-  ed25519_create_keypair(public_key, private_key,
+  ed25519_create_keypair(public_key.data(), private_key.data(),
                          master_key.privateKey.cdata());
 
   CodecMapping mapping(AlphaMap, Base58Map);
-  std::vector<uint8_t> base58_priv, base58_pub;
 
-  for (int i = 0; i < 64; i++) {
-    base58_priv.push_back(private_key[i]);
-  }
-
-  for (int i = 0; i < 32; i++) {
-    base58_pub.push_back(public_key[i]);
-  }
-
-  PublicKey = Base58Encode(base58_pub, mapping);
-  PrivateKey = Base58Encode(base58_priv, mapping);
+  PublicKey = Base58Encode(public_key, mapping);
+  PrivateKey = Base58Encode(private_key, mapping);
 }
 
-Client::Client(std::vector<std::string> seedWords) {
+Client::Client(const std::vector<std::string>& seedWords) {
   // create mnemonic seed
   bip3x::bytes_64 seed = bip3x::HDKeyEncoder::makeBip39Seed(seedWords);
 

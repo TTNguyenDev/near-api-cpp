@@ -23,16 +23,14 @@ public:
   template <typename T>
   using Callback = std::function<void(bool, T, std::string err)>;
 
-  Client(std::string publicKey) : PublicKey(publicKey){};
-  Client(std::string publicKey, std::string privateKey)
-      : PublicKey(publicKey), PrivateKey(privateKey) {}
-  Client(std::vector<std::string> seedWords);
-  Client();
-
-  ~Client();
+  static Client* CreateNew();
+  static Client* CreateFromSeedWords(const std::vector<std::string>& seedWords);
+  static Client* CreateFromPrivateKey(std::string privateKey);
 
   Client(const Client &other) = delete;
   Client &operator=(const Client &) = delete;
+  
+  ~Client();
 
   void SetIndexerUrl(std::string indexerUrl) { IndexerUrl = indexerUrl; }
   void SetRPCUrl(std::string rpcUrl) { RpcUrl = rpcUrl; }
@@ -45,6 +43,13 @@ public:
              Callback<std::string> callback);
 
 private:
+  Client();
+  Client(const std::vector<std::string>& seedWords);
+  Client(std::string publicKey) : PublicKey(publicKey){};
+  Client(std::string publicKey, std::string privateKey)
+      : PublicKey(publicKey), PrivateKey(privateKey) {}
+
+
   std::string PublicKey;
   std::string PrivateKey;
   std::string IndexerUrl, RpcUrl;
